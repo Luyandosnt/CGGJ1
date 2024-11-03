@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Troop
   - ResourceController
+  - Pickup
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Enemy
   - Troop
   - 
-  - 
+  - Pickup
   - 
   - 
   - 
