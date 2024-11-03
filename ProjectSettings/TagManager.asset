@@ -7,6 +7,7 @@ TagManager:
   - Grid
   - Enemy
   - Troop
+  - ResourceController
   layers:
   - Default
   - TransparentFX
