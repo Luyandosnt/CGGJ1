@@ -51,6 +51,7 @@ public class Troop : MonoBehaviour
     {
         Debug.Log($"{gameObject.name} has been defeated!");
         // Implement defeat logic here (e.g., play death animation, destroy object)
+        GetComponentInParent<Cell>().occupied = false; // Mark the cell as unoccupied
         Destroy(gameObject); // Example: destroy the troop game object
     }
 
