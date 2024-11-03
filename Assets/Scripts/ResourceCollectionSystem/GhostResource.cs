@@ -18,7 +18,7 @@ public class GhostResource : MonoBehaviour
     public void CollectResource()
     {
         // Add the resource amount to the inventory
-        GeneralResourceController.Instance.ResourceClicked(resourceType, transform.position, amount);
+        GeneralResourceController.Instance.ResourceClicked(resourceType, amount);
 
         // Destroy the ghost resource object after reaching its destination
         Destroy(gameObject);
