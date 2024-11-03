@@ -3002,6 +3002,7 @@ MonoBehaviour:
   cols: 12
   cellSize: 1.2
   cellPrefab: {fileID: 5122533062781284494, guid: 30b1efc724440ef4a9bf3bf06bf3730b, type: 3}
+  generateOnStart: 0
 --- !u!4 &684229716
 Transform:
   m_ObjectHideFlags: 0

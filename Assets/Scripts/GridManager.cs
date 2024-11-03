@@ -11,9 +11,12 @@ public class GridManager : MonoBehaviour
 
     public GameObject[,] gridArray; // Array to hold all cell objects
 
+    public bool generateOnStart = true;
+
     void Start()
     {
-        GenerateGrid();
+        if (generateOnStart)
+            GenerateGrid();
     }
 
     [Button]
