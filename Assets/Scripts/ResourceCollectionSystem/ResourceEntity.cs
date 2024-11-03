@@ -30,19 +30,12 @@ public class ResourceEntity : MonoBehaviour
         return collected;
     }
 
-    public ResourceType GetType()
+    public ResourceType GetResourceType()
     {
         return type;
     }
 
 }
 
-public enum ResourceType
-{
-    EssenceCrystal,
-    Gold,
-    InfernoEmber,
-    FrozenShard,
-    VenomGland
-}
+
 
