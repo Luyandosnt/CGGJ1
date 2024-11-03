@@ -9,7 +9,7 @@ public class GridManager : MonoBehaviour
 
     public GameObject cellPrefab; // Assign a cell prefab (e.g., an empty sprite or square image)
 
-    private GameObject[,] gridArray; // Array to hold all cell objects
+    public GameObject[,] gridArray; // Array to hold all cell objects
 
     void Start()
     {
@@ -39,8 +39,10 @@ public class GridManager : MonoBehaviour
                 // Instantiate the cellPrefab at the calculated position
                 GameObject cell = Instantiate(cellPrefab, cellPosition, Quaternion.identity, transform);
 
-                // Optionally, name each cell for easier debugging
+                // Name each cell for easier debugging
                 cell.name = "Cell_" + row + "_" + col;
+
+                cell.AddComponent<Cell>(); // Add the Cell script to the cell object
 
                 // Store reference in gridArray
                 gridArray[row, col] = cell;
@@ -53,6 +55,7 @@ public class GridManager : MonoBehaviour
     {
         if (gridArray == null)
             return;
+
         // Destroy all cell objects
         foreach (GameObject cell in gridArray)
         {
@@ -62,4 +65,5 @@ public class GridManager : MonoBehaviour
                 Destroy(cell);
         }
     }
+
 }
