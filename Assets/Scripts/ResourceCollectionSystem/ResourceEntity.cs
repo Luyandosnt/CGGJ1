@@ -1,41 +1,50 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 public class ResourceEntity : MonoBehaviour
 {
     [SerializeField] private ResourceType type;
-    private GeneralResourceController controller;
-    private bool collected = false;
-
+    [SerializeField] private float lifetime = 5f;
+    [SerializeField] private int amount = 1;
+    [SerializeField] private GhostResource ghostResource; // Optional ghost resource prefab
 
     private void Start()
     {
-       controller = GameObject.FindGameObjectWithTag("ResourceController").GetComponent<GeneralResourceController>();
-
+        Destroy(gameObject, lifetime); // Destroy after lifetime if not collected
     }
 
-
-    private void OnMouseOver()
+    private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        // Check if mouse is over the resource
+        if (GetComponent<Collider2D>().OverlapPoint(mousePos))
         {
-            collected = true;
-            controller.ResourceClicked(type, transform.position);
-            Destroy(gameObject);
+            CollectResource();
         }
     }
 
-    public bool IsCollected()
+    private void CollectResource()
     {
-        return collected;
+        // Instantiate a ghost resource (visual feedback)
+        if (ghostResource != null)
+        {
+            // Convert the resource's world position to a screen position
+            Vector3 screenPosition = Camera.main.WorldToScreenPoint(transform.position);
+
+            // Instantiate the ghost resource as a child of the UI container
+            GhostResource GR = Instantiate(ghostResource, GeneralResourceController.Instance.ghostContainer);
+            GR.SetResource(type, amount);
+
+            // Set the ghost resource's UI position
+            GR.transform.position = screenPosition;
+        }
+
+        // Destroy the original resource object
+        Destroy(gameObject);
     }
 
     public ResourceType GetResourceType()
     {
         return type;
     }
-
 }
-
-
-
