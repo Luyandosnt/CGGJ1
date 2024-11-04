@@ -10304,6 +10304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridManager: {fileID: 684229715}
   troopPrefabs:
+  - {fileID: 9213507134069858454, guid: d969cebadb048154abc1e3caf041de13, type: 3}
   - {fileID: 9213507134069858454, guid: 56838298bc79b2b4c8d08bdaf7afda24, type: 3}
   - {fileID: 9213507134069858454, guid: f29c765db0b09994fbe2147263fb4487, type: 3}
   - {fileID: 9213507134069858454, guid: 40b64d6b30c350d49b7962941c0c03a9, type: 3}
