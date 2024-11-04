@@ -3,6 +3,7 @@ using UnityEngine;
 public class EnemyInstance : MonoBehaviour
 {
     public GameObject[] Enemies;
+    public Transform EnemiesParent;
     public Transform[] InstancePosition;
     public float Frequency;
 
@@ -16,7 +17,7 @@ public class EnemyInstance : MonoBehaviour
         {
             Position = Random.Range(0, InstancePosition.Length);
             int enemyIndex = Random.Range(0, Enemies.Length);
-            Instantiate(Enemies[enemyIndex], InstancePosition[Position].position, InstancePosition[Position].rotation);
+            Instantiate(Enemies[enemyIndex], InstancePosition[Position].position, InstancePosition[Position].rotation, EnemiesParent);
             Timer = 0;
         }
     }
