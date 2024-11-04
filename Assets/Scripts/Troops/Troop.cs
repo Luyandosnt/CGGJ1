@@ -24,7 +24,7 @@ public abstract class Troop : MonoBehaviour
 
     protected abstract void Attack(); // Abstract attack method for melee/ranged variations
 
-    public void TakeDamage(int damage)
+    public virtual void TakeDamage(int damage)
     {
         health -= damage;
         Debug.Log($"{gameObject.name} took {damage} damage! Health remaining: {health}");

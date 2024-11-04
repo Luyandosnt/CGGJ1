@@ -74,4 +74,9 @@ public class TroopPlacement : MonoBehaviour
         }
         return null; // No cell found
     }
+
+    public void UpdateTroopIndex(int index)
+    {
+        currentTroopIndex = index;
+    }
 }
