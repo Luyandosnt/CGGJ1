@@ -37,7 +37,7 @@ public class GridManager : MonoBehaviour
             for (int col = 0; col < cols; col++)
             {
                 // Calculate cell position and apply the offset to center the grid
-                Vector2 cellPosition = new Vector2(col * cellSize, row * cellSize) + offset;
+                Vector2 cellPosition = new Vector2(col * cellSize, row * cellSize) + (Vector2)transform.position + offset;
 
                 // Instantiate the cellPrefab at the calculated position
                 GameObject cell = Instantiate(cellPrefab, cellPosition, Quaternion.identity, transform);
