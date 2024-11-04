@@ -3804,10 +3804,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ReferenceGrid
       objectReference: {fileID: 0}
-    - target: {fileID: 4566248979284742104, guid: f1ee80e0fe3dde140a479bf5cf3a04b6, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
