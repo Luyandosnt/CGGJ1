@@ -11,7 +11,6 @@ public class Spike : Troop
     {
         health = maxUses; // Set health to max uses, so it can be used only `maxUses` times
         damage = 5; // Spike damage value
-        attackRange = 0f; // No ranged attack for Spike
     }
 
     private void Update()
