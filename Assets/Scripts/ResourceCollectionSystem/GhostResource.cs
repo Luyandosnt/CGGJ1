@@ -1,4 +1,5 @@
 using UnityEngine;
+using static GeneralResourceController;
 
 public class GhostResource : MonoBehaviour
 {

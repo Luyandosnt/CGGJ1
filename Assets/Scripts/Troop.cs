@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Troop : MonoBehaviour
 {
+    public int troopCost = 10;
+
     public int health = 5; // Health of the troop
     public LayerMask enemyLayer; // Layer mask to detect enemies
     public int damage = 2; // Damage dealt to enemies

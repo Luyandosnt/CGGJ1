@@ -1,4 +1,5 @@
 using UnityEngine;
+using static GeneralResourceController;
 
 public class TroopPlacement : MonoBehaviour
 {
@@ -10,6 +11,11 @@ public class TroopPlacement : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0)) // Left click to place troop
         {
+            if (troopPrefabs[currentTroopIndex].GetComponent<Troop>().troopCost > GeneralResourceController.Instance.GetResourceAmount(ResourceType.Gold))
+            {
+                Debug.Log("Not enough gold to place this troop!");
+                return;
+            }
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
             // Get the cell that was clicked
@@ -27,6 +33,7 @@ public class TroopPlacement : MonoBehaviour
                 cell.troop = troop.GetComponent<Troop>(); // Assign the troop to the cell
                 cell.occupied = true; // Mark the cell as occupied
                 troop.transform.localPosition = Vector3.zero; // Center the troop within the cell
+                GeneralResourceController.Instance.DecreaseResource(GeneralResourceController.ResourceType.Gold, troop.GetComponent<Troop>().troopCost);
             }
         }
         else if (Input.GetMouseButtonDown(2)) // Middle click to remove troop

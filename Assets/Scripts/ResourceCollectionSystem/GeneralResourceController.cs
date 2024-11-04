@@ -211,29 +211,48 @@ public class GeneralResourceController : MonoBehaviour
                   $"VenomGland: {venomGland}\n" +
                   $"///////////////////////////////////");
     }
-}
 
-public enum ResourceType
-{
-    EssenceCrystal,
-    Gold,
-    InfernoEmber,
-    FrozenShard,
-    VenomGland
-}
+    public int GetResourceAmount(ResourceType type)
+    {
+        switch (type)
+        {
+            case ResourceType.Gold:
+                return gold;
+            case ResourceType.InfernoEmber:
+                return infernoEmber;
+            case ResourceType.FrozenShard:
+                return frozenShard;
+            case ResourceType.VenomGland:
+                return venomGland;
+            case ResourceType.EssenceCrystal:
+                return essenceCrystal;
+            default:
+                return 0;
+        }
+    }
 
-public enum RuneType
-{
-    FireRune,
-    FrostRune,
-    MagicRune,
-    PoisonRune
-}
+    public enum ResourceType
+    {
+        EssenceCrystal,
+        Gold,
+        InfernoEmber,
+        FrozenShard,
+        VenomGland
+    }
 
-public enum PotionType
-{
-    PoisonPotion,
-    FrostPotion,
-    FirePotion,
-    HealthPotion
+    public enum RuneType
+    {
+        FireRune,
+        FrostRune,
+        MagicRune,
+        PoisonRune
+    }
+
+    public enum PotionType
+    {
+        PoisonPotion,
+        FrostPotion,
+        FirePotion,
+        HealthPotion
+    }
 }

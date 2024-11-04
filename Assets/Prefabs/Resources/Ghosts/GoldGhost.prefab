@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destination: {x: 1760.2, y: 1025.3}
-  speed: 2
+  speed: 1.5
 --- !u!222 &5524209463693802766
 CanvasRenderer:
   m_ObjectHideFlags: 0
