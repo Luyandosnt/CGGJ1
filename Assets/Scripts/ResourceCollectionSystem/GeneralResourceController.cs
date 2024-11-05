@@ -5,6 +5,8 @@ public class GeneralResourceController : MonoBehaviour
 {
     public static GeneralResourceController Instance { get; private set; }
     public Transform ghostContainer;
+    public Transform[] ghostResourceDestinations;
+    public TroopPlacement troopPlacement;
 
     public TMP_Text[] resourceTexts;
 
@@ -119,43 +121,62 @@ public class GeneralResourceController : MonoBehaviour
                 break;
         }
     }
+
+    public int GetResourceIndex(ResourceType type)
+    {
+        switch (type)
+        {
+            case ResourceType.Gold:
+                return 0;
+            case ResourceType.InfernoEmber:
+                return 1;
+            case ResourceType.FrozenShard:
+                return 2;
+            case ResourceType.VenomGland:
+                return 3;
+            case ResourceType.EssenceCrystal:
+                return 4;
+            default:
+                return 0;
+        }
+    }
     #endregion
 
     #region - Runes -
-    public void ClassifyRunes(RuneType type)
+    public void ClassifyRunes(RuneType type, int amount)
     {
         switch (type)
         {
             case RuneType.FireRune:
-                fireRune++;
+                fireRune += amount;
                 break;
             case RuneType.FrostRune:
-                frostRune++;
+                frostRune += amount;
                 break;
             case RuneType.MagicRune:
-                magicRune++;
+                magicRune += amount;
                 break;
             case RuneType.PoisonRune:
-                poisonRune++;
+                poisonRune += amount;
                 break;
         }
     }
 
-    public void DecreaseRunes(RuneType type)
+    public void DecreaseRunes(RuneType type, int amount)
     {
         switch (type)
         {
             case RuneType.FireRune:
-                fireRune--;
+                fireRune -= amount;
                 break;
             case RuneType.FrostRune:
-                frostRune--;
+                frostRune -= amount;
                 break;
             case RuneType.MagicRune:
-                magicRune--;
+                magicRune -= amount;
                 break;
             case RuneType.PoisonRune:
-                poisonRune--;
+                poisonRune -= amount;
                 break;
         }
     }
@@ -283,7 +304,7 @@ public class GeneralResourceController : MonoBehaviour
 
     private void ShowStorage()
     {
-        Debug.Log($"///////////////////////////////////\n" +
+        Debug.Log($"Resources:\n" +
                   $"EssenceCrystal: {essenceCrystal}\n" +
                   $"Gold: {gold}\n" +
                   $"InfernoEmber: {infernoEmber}\n" +
@@ -313,11 +334,11 @@ public class GeneralResourceController : MonoBehaviour
 
     public enum ResourceType
     {
-        EssenceCrystal,
         Gold,
         InfernoEmber,
         FrozenShard,
-        VenomGland
+        VenomGland,
+        EssenceCrystal
     }
 
     public enum RuneType

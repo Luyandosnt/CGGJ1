@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 315b0bff993f6224c91761542795a802, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 1
+  type: 0
   lifetime: 7
   amount: 1
   ghostResource: {fileID: -709706590494757217, guid: ca410c4b69b5db345a888ee261ca16d8, type: 3}

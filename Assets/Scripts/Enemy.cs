@@ -4,7 +4,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public GameObject[] Loots;
-    public Image HealthBar;
+    public Slider HealthBar;
     public float moveSpeed = 2f;
     public float attackRange = 1f;
     public float attackFireRate = 1f; // Attacks per second
@@ -16,8 +16,12 @@ public class Enemy : MonoBehaviour
     private float attackCooldown = 0f; // Tracks when the enemy can attack again
     private Transform targetTroop; // Reference to the target troop being attacked
     private bool isAttacking = false; // Flag to check if the enemy is attacking
+    private int maxHealth;
 
-
+    private void OnEnable()
+    {
+        maxHealth = health;
+    }
     void Start()
     {
         Chances = GameManager.gameManager.LootChances;
@@ -27,7 +31,6 @@ public class Enemy : MonoBehaviour
     {
         Move();
         Attack();
-        HealthBar.fillAmount = health * 0.2f;
     }
 
     void Move()
@@ -73,7 +76,7 @@ public class Enemy : MonoBehaviour
         {
             health -= damage; // Reduce health
             Debug.Log($"{gameObject.name} took {damage} damage! Health remaining: {health}");
-    
+
             if (health <= 0)
             {
                 Die(); // Call die function if health is zero or less

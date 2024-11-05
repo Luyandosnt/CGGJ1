@@ -33,8 +33,8 @@ public class ResourceEntity : MonoBehaviour
             Vector3 screenPosition = Camera.main.WorldToScreenPoint(transform.position);
 
             // Instantiate the ghost resource as a child of the UI container
-            GhostResource GR = Instantiate(ghostResource, GeneralResourceController.Instance.ghostContainer);
-            GR.SetResource(type, amount);
+            GhostResource GR = Instantiate(ghostResource, Instance.ghostContainer);
+            GR.SetResource(type, amount, Instance.ghostResourceDestinations[Instance.GetResourceIndex(type)]);
 
             // Set the ghost resource's UI position
             GR.transform.position = screenPosition;

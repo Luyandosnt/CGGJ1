@@ -13,6 +13,7 @@ public class GridManager : MonoBehaviour
 
     public bool generateOnStart = true;
 
+    private Quaternion storedRotation;
     void Start()
     {
         if (generateOnStart)
@@ -23,6 +24,8 @@ public class GridManager : MonoBehaviour
     void GenerateGrid()
     {
         ClearGrid();
+        storedRotation = transform.rotation;
+        transform.rotation = Quaternion.identity;
         gridArray = new GameObject[rows, cols];
 
         // Calculate the grid's total width and height
@@ -51,6 +54,7 @@ public class GridManager : MonoBehaviour
                 gridArray[row, col] = cell;
             }
         }
+        transform.rotation = storedRotation;
     }
 
     [Button]

@@ -4,17 +4,8 @@ using static GeneralResourceController;
 public class GhostResource : MonoBehaviour
 {
     private int amount = 0;                  // Amount of resource to add
-    public Vector2 destination;              // Destination for the ghost resource
     public float speed = 5f;                 // Movement speed of the ghost resource
     private ResourceType resourceType;        // Type of resource being collected
-
-    private void Start()
-    {
-        // Animate movement towards the destination with easing effect
-        LeanTween.move(gameObject, destination, speed)
-            .setEase(LeanTweenType.easeInOutSine)
-            .setOnComplete(() => CollectResource());
-    }
 
     public void CollectResource()
     {
@@ -25,10 +16,15 @@ public class GhostResource : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void SetResource(ResourceType type, int amount)
+    public void SetResource(ResourceType type, int amount, Transform destination)
     {
         resourceType = type;
         this.amount = amount;
+
+        // Animate movement towards the destination with easing effect
+        LeanTween.move(gameObject, destination, speed)
+            .setEase(LeanTweenType.easeInOutSine)
+            .setOnComplete(() => CollectResource());
     }
 
 }
