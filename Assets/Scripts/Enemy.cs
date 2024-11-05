@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public GameObject[] Loots;
     public Image HealthBar;
     public float moveSpeed = 2f;
     public float attackRange = 1f;
@@ -11,9 +12,16 @@ public class Enemy : MonoBehaviour
     public LayerMask troopLayer; // Layer mask to detect troops
     public int health = 5; // Health of the enemy
 
+    private int Chances;
     private float attackCooldown = 0f; // Tracks when the enemy can attack again
     private Transform targetTroop; // Reference to the target troop being attacked
     private bool isAttacking = false; // Flag to check if the enemy is attacking
+
+
+    void Start()
+    {
+        Chances = GameManager.gameManager.LootChances;
+    }
 
     void Update()
     {
@@ -91,4 +99,10 @@ public class Enemy : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, transform.position + Vector3.left * attackRange);
     }
+/*
+    private void DropLoot()
+    {
+        Instantiate(Loot[Random.Range(0, Loots.Length)], transform.position, transform.rotation);
+    }
+*/
 }
