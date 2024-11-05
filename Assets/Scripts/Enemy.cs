@@ -90,6 +90,7 @@ public class Enemy : MonoBehaviour
     {
         Debug.Log($"{gameObject.name} has been defeated!");
         // Implement defeat logic here (e.g., play death animation, destroy object)
+        DropLoot();
         Destroy(gameObject); // Example: destroy the enemy game object
     }
 
@@ -102,6 +103,10 @@ public class Enemy : MonoBehaviour
     
     private void DropLoot()
     {
-        Instantiate(Loot[Random.Range(0, Loots.Length)], transform.position, transform.rotation);
+        int Chance = Random.Range(0, Chances);
+        if(Chance <= Chances)
+        {
+            Instantiate(Loot[Random.Range(0, Loots.Length)], transform.position, transform.rotation);
+        }
     }
 }
