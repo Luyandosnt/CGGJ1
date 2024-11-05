@@ -8,7 +8,7 @@ public class Knight : Troop
         if (hit.collider != null && hit.collider.CompareTag("Enemy"))
         {
             Debug.Log($"{gameObject.name} is attacking {hit.collider.name}!");
-            hit.collider.GetComponent<Enemy>().TakeDamage(damage);
+            hit.collider.GetComponent<Enemy>().TakeDamage(damage, false);
             attackCooldown = 1f / attackFireRate; // Reset cooldown
         }
     }
