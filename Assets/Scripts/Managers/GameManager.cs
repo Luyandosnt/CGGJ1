@@ -5,10 +5,10 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager gameManager;
 
-    public int Chances;
+    public int LootChances;
 
     private void Awake()
     {
-      instance = this;
+      gameManager = this;
     }
 }
