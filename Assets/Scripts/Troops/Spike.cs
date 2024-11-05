@@ -43,7 +43,7 @@ public class Spike : Troop
         Enemy enemyScript = enemy.GetComponent<Enemy>();
         if (enemyScript != null)
         {
-            enemyScript.TakeDamage(damage);
+            enemyScript.TakeDamage(damage, false);
         }
 
         health--; // Reduce Spike's health (use count)
@@ -77,6 +77,6 @@ public class Spike : Troop
 
     public override void TakeDamage(int damage)
     {
-        // Spikes don’t take external damage; this can be left empty or include custom logic if needed
+        // Spikes donâ€™t take external damage; this can be left empty or include custom logic if needed
     }
 }
