@@ -106,7 +106,7 @@ public class Enemy : MonoBehaviour
         int Chance = Random.Range(0, Chances);
         if(Chance <= Chances)
         {
-            Instantiate(Loot[Random.Range(0, Loots.Length)], transform.position, transform.rotation);
+            Instantiate(Loots[Random.Range(0, Loots.Length)], transform.position, transform.rotation);
         }
     }
 }
