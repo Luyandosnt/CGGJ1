@@ -28,7 +28,7 @@ public class Arrow : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            other.GetComponent<Enemy>().TakeDamage(damage);
+            other.GetComponent<Enemy>().TakeDamage(damage, false);
             Destroy(gameObject); // Destroy the arrow on impact
         }
     }
