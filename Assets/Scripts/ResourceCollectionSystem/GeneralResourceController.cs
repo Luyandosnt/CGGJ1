@@ -159,6 +159,46 @@ public class GeneralResourceController : MonoBehaviour
                 break;
         }
     }
+
+    public void CraftRunes(RuneType type)
+    {
+        switch (type)
+        {
+            case RuneType.FireRune:
+                if (infernoEmber >=1 && gold >= 3)
+                {
+                    infernoEmber -= 1;
+                    gold -= 3;
+                    fireRune++;
+                }
+                break;
+            case RuneType.FrostRune:
+                if (frozenShard >= 1 && gold >= 3)
+                {
+                    frozenShard -= 1;
+                    gold -= 3;
+                    frostRune++;
+                }
+                break;
+            case RuneType.MagicRune:
+                if (essenceCrystal >= 1 && gold >= 3)
+                {
+                    essenceCrystal -= 1;
+                    gold -= 3;
+                    magicRune++;
+                }
+                break;
+            case RuneType.PoisonRune:
+                if (venomGland >=1 && gold >= 3)
+                {
+                    venomGland -= 1;
+                    gold -= 3;
+                    poisonRune++;
+                }
+                break;
+        }
+    }
+
     #endregion
 
     #region - Potions -
@@ -199,6 +239,46 @@ public class GeneralResourceController : MonoBehaviour
                 break;
         }
     }
+
+    public void CraftPotions(PotionType type)
+    {
+        switch (type)
+        {
+            case PotionType.PoisonPotion:
+                if (poisonRune >=1 && gold >= 2)
+                {
+                    poisonRune -= 1;
+                    gold -= 2;
+                    poisonPotion++;
+                }
+                break;
+            case PotionType.FrostPotion:
+                if (frostRune >= 1 && gold >= 2)
+                {
+                    frostRune -= 1;
+                    gold -= 2;
+                    frostPotion++;
+                }
+                break;
+            case PotionType.FirePotion:
+                if (fireRune >= 1 && gold >= 2)
+                {
+                    fireRune -= 1;
+                    gold -= 2;
+                    firePotion++;
+                }
+                break;
+            case PotionType.HealthPotion:
+                if (magicRune >= 1 && gold >= 2)
+                {
+                    magicRune -= 1;
+                    gold -= 2;
+                    healthPotion++;
+                }
+                break;
+        }
+    }
+
     #endregion
 
     private void ShowStorage()
