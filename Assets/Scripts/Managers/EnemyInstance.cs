@@ -17,7 +17,7 @@ public class EnemyInstance : MonoBehaviour
         {
             Position = Random.Range(0, InstancePosition.Length);
             int enemyIndex = Random.Range(0, Enemies.Length);
-            Instantiate(Enemies[enemyIndex], InstancePosition[Position].position, InstancePosition[Position].rotation, EnemiesParent);
+            Instantiate(Enemies[enemyIndex], InstancePosition[Position].position, Quaternion.identity, EnemiesParent);
             Timer = 0;
         }
     }

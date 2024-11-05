@@ -15,14 +15,24 @@ public class ResourceEntity : MonoBehaviour
 
     private void Update()
     {
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        // Define a layer mask for the resource objects
+        int resourceLayerMask = LayerMask.GetMask("Pickup");
 
-        // Check if mouse is over the resource
-        if (GetComponent<Collider2D>().OverlapPoint(mousePos))
+        // Cast a ray from the camera to the mouse position
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        // Check if the ray hits an object on the resource layer
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity, resourceLayerMask))
         {
-            CollectResource();
+            // Ensure the object hit is this resource entity
+            if (hit.collider.gameObject == gameObject)
+            {
+                CollectResource();
+            }
         }
     }
+
 
     private void CollectResource()
     {
