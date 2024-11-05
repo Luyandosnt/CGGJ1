@@ -99,10 +99,9 @@ public class Enemy : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, transform.position + Vector3.left * attackRange);
     }
-/*
+    
     private void DropLoot()
     {
         Instantiate(Loot[Random.Range(0, Loots.Length)], transform.position, transform.rotation);
     }
-*/
 }
