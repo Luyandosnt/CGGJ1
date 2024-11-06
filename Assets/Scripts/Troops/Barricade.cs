@@ -22,4 +22,6 @@ public class Barricade : Troop
             Die(); // Call die function if health is zero or less
         }
     }
+
+    protected override void DoDamage() { }
 }

@@ -5,7 +5,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager gameManager;
 
-    public int LootChances;
+    [Range(0, 100)] public float LootChances;
 
     private void Awake()
     {

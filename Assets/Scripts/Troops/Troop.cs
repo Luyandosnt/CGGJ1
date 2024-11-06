@@ -24,6 +24,12 @@ public abstract class Troop : MonoBehaviour
     }
 
     protected abstract void Attack(); // Abstract attack method for melee/ranged variations
+    protected abstract void DoDamage(); // Abstract attack method for melee/ranged variations
+
+    public virtual void PerformDamage()
+    {
+        DoDamage();
+    }
 
     public virtual void TakeDamage(int damage)
     {

@@ -10,8 +10,8 @@ public class Knight : Troop
         {
             Debug.Log($"{gameObject.name} is attacking {hit.collider.name}!");
             enemy = hit.collider.GetComponent<Enemy>();
+            attackCooldown = 1f / attackFireRate; // Reset cooldown
             animator.SetBool("Attack", true);
-            Invoke("DoDamage", animToAttackTime);
         }
         else
         {
@@ -19,11 +19,12 @@ public class Knight : Troop
         }
     }
 
-    public void DoDamage()
+    protected override void DoDamage()
     {
         if (enemy != null)
             enemy.TakeDamage(damage, false);
-        attackCooldown = 1f / attackFireRate; // Reset cooldown
+        if (enemy == null || enemy.health <= 0)
+            animator.SetBool("Attack", false);
     }
 
     // Draw attack range in the editor

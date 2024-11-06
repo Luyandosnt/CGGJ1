@@ -22,6 +22,8 @@ public class Archer : Troop
         arrowScript.SetTarget(targetPosition, damage);
     }
 
+    protected override void DoDamage() { }
+
     // Draw attack range in the editor
     private void OnDrawGizmosSelected()
     {

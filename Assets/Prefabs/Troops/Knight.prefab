@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7049527807543125786}
   - component: {fileID: 5377264619753106544}
+  - component: {fileID: 7767028135324833499}
   - component: {fileID: 6187320460460332810}
   m_Layer: 10
   m_Name: Knight
@@ -88,6 +89,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7767028135324833499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2828794765496636135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17b6cc3ae526d804a99b0d4076079839, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  troop: {fileID: 3388509592251795081}
 --- !u!95 &6187320460460332810
 Animator:
   serializedVersion: 7
@@ -158,13 +172,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   troopCost: 10
   health: 5
-  animToAttackTime: 0.08
+  animToAttackTime: 0.33
   enemyLayer:
     serializedVersion: 2
     m_Bits: 512
   damage: 2
-  attackRange: 1
-  attackFireRate: 0.06666667
+  attackRange: 1.5
+  attackFireRate: 1
   animator: {fileID: 6187320460460332810}
 --- !u!61 &9102592507281516852
 BoxCollider2D:

@@ -4,7 +4,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public GameObject[] Loots;
-    public Slider HealthBar;
+    public Transform HealthBar;
     public float moveSpeed = 2f;
     public float attackRange = 1f;
     public float attackFireRate = 1f; // Attacks per second
@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour
     public LayerMask troopLayer; // Layer mask to detect troops
     public int health = 5; // Health of the enemy
 
-    private int Chances;
+    private float Chances;
     private float attackCooldown = 0f; // Tracks when the enemy can attack again
     private Transform targetTroop; // Reference to the target troop being attacked
     private bool isAttacking = false; // Flag to check if the enemy is attacking
@@ -84,9 +84,15 @@ public class Enemy : MonoBehaviour
         }
         else
         {
-            health = 0;
-            Die();
+            health -= damage * 2; // Reduce health
+            Debug.Log($"{gameObject.name} took {damage} damage! Health remaining: {health}");
+
+            if (health <= 0)
+            {
+                Die(); // Call die function if health is zero or less
+            }
         }
+        HealthBar.localScale = new Vector3((float)health / maxHealth, HealthBar.localScale.y, HealthBar.localScale.z);
     }
 
     private void Die()
@@ -106,7 +112,7 @@ public class Enemy : MonoBehaviour
     
     private void DropLoot()
     {
-        int Chance = Random.Range(0, Chances);
+        float Chance = Random.Range(0.01f, 100);
         if(Chance <= Chances)
         {
             Instantiate(Loots[Random.Range(0, Loots.Length)], transform.position, transform.rotation);

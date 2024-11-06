@@ -75,6 +75,9 @@ public class Spike : Troop
         // Spike has no active attack functionality
     }
 
+    // Override DoDamage to prevent Spike from dealing damage
+    protected override void DoDamage() { }
+
     public override void TakeDamage(int damage)
     {
         // Spikes don’t take external damage; this can be left empty or include custom logic if needed
