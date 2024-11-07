@@ -4,6 +4,9 @@ public abstract class Troop : MonoBehaviour
 {
     public int troopCost = 10;
     public int health = 5; // Health of the troop
+    protected int maxHealth; // Health of the troop
+    public bool canLifesteal;
+    public float lifeStealPercentage = 0.1f;
     public float animToAttackTime = 0f; // Time to transition from animation to attack
     public LayerMask enemyLayer; // Layer mask to detect enemies
     public int damage = 2; // Damage dealt to enemies
@@ -11,6 +14,13 @@ public abstract class Troop : MonoBehaviour
     public float attackFireRate = 1f; // Attacks per second
     protected float attackCooldown = 0f; // Tracks when the troop can attack again
     public Animator animator;
+
+    bool doLifesteal = false;
+
+    private void Start()
+    {
+        maxHealth = health;
+    }
     void Update()
     {
         if (attackCooldown > 0f)

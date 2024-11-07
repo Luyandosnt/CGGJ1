@@ -16,7 +16,9 @@ public class Enemy : MonoBehaviour
     private float attackCooldown = 0f; // Tracks when the enemy can attack again
     private Transform targetTroop; // Reference to the target troop being attacked
     private bool isAttacking = false; // Flag to check if the enemy is attacking
-    private int maxHealth;
+    [HideInInspector] public int maxHealth;
+
+    [HideInInspector] public bool lifeStolen = false;
 
     private void OnEnable()
     {

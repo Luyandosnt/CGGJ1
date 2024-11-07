@@ -19,7 +19,16 @@ public class Archer : Troop
     {
         GameObject arrow = Instantiate(arrowPrefab, transform.position, Quaternion.identity);
         Arrow arrowScript = arrow.GetComponent<Arrow>();
+        arrowScript.owner = this;
         arrowScript.SetTarget(targetPosition, damage);
+    }
+
+    public void Heal(int enemyHealth)
+    {
+        // Heal the archer based on the percentage of the enemy's max health, to maximum of the archer's max health
+        int healAmount = Mathf.Min((int)(enemyHealth * lifeStealPercentage), health - maxHealth);
+        health += healAmount;
+        Debug.Log($"{gameObject.name} healed for {healAmount} health! Health remaining: {health}");
     }
 
     protected override void DoDamage() { }

@@ -6,6 +6,9 @@ public class Arrow : MonoBehaviour
     private int damage;
     private Vector3 targetPosition;
 
+    public Archer owner;
+    public Enemy enemy;
+
     public void SetTarget(Vector3 target, int damageAmount)
     {
         targetPosition = target;
@@ -28,7 +31,9 @@ public class Arrow : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            other.GetComponent<Enemy>().TakeDamage(damage, false);
+            enemy = other.GetComponent<Enemy>();
+            enemy.TakeDamage(damage, false);
+            owner.Heal(enemy.health);
             Destroy(gameObject); // Destroy the arrow on impact
         }
     }
