@@ -169,12 +169,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4347ed5c6b990440b4521361a300d93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  troopCost: 10
+  troopCost: 7
   health: 5
   enemyLayer:
     serializedVersion: 2
     m_Bits: 512
-  damage: 2
-  attackRange: 7.83
+  damage: 1
+  attackRange: 5.5
   attackFireRate: 1
+  animator: {fileID: 0}
+  deathObj: {fileID: 0}
+  fireObj: {fileID: 0}
+  fireDPS: 1
+  poisonDPS: 1
+  slowPercentage: 0.3
+  lifeStealPercentage: 0.1
+  level: 1
+  maxLevel: 5
+  healthIncrement: 2
+  damageIncrement: 1
+  fireDPSIncrement: 0.5
+  poisonDPSIncrement: 0.5
+  slowPercentageIncrement: 0.05
+  lifeStealPercentageIncrement: 0.05
+  variant: 0
+  canLifesteal: 0
   arrowPrefab: {fileID: 7182181340014588374, guid: 590a518ed18aa704897907b4e83f7102, type: 3}

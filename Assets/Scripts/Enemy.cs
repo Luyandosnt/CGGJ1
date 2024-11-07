@@ -3,30 +3,40 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public GameObject[] Loots;
     public Transform HealthBar;
+    public LayerMask troopLayer; // Layer mask to detect troops
+
+    [Header("Enemy Stats")]
     public float moveSpeed = 2f;
     public float attackRange = 1f;
     public float attackFireRate = 1f; // Attacks per second
-    public int damage = 1; // Damage dealt to troops
-    public LayerMask troopLayer; // Layer mask to detect troops
-    public int health = 5; // Health of the enemy
+    public float damage = 1; // Damage dealt to troops
+    public float health = 5; // Health of the enemy
+    public int level = 1;
 
-    private float Chances;
+    [Header("Coin Loot")]
+    public GameObject Coin;
+    public Vector2 coinsMinMaxAmount;
+
+    [Header("Resource Loots")]
+    public GameObject ResourceLoots;
+    [Range(0, 100)] public float resourcesLootChances;
+    public Vector2 resourcesMinMaxAmount;
+
+    //Private Variables
     private float attackCooldown = 0f; // Tracks when the enemy can attack again
     private Transform targetTroop; // Reference to the target troop being attacked
     private bool isAttacking = false; // Flag to check if the enemy is attacking
-    [HideInInspector] public int maxHealth;
-
+    [HideInInspector] public float maxHealth;
     [HideInInspector] public bool lifeStolen = false;
 
-    private void OnEnable()
+    //This method must be called before this enemy attacks or is attacked
+    public void SetLevel(int level)
     {
+        this.level = level;
+        health = health + (level - 1) * 2;
         maxHealth = health;
-    }
-    void Start()
-    {
-        Chances = GameManager.gameManager.LootChances;
+        damage = damage + (level - 1);
     }
 
     void Update()
@@ -72,7 +82,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int damage, bool Weakness)
+    public void TakeDamage(float damage, bool Weakness)
     {
         if(!Weakness)
         {
@@ -94,13 +104,14 @@ public class Enemy : MonoBehaviour
                 Die(); // Call die function if health is zero or less
             }
         }
-        HealthBar.localScale = new Vector3((float)health / maxHealth, HealthBar.localScale.y, HealthBar.localScale.z);
+        HealthBar.localScale = new Vector3(health / maxHealth, HealthBar.localScale.y, HealthBar.localScale.z);
     }
 
     private void Die()
     {
         Debug.Log($"{gameObject.name} has been defeated!");
         // Implement defeat logic here (e.g., play death animation, destroy object)
+        GameManager.gameManager.RemoveEnemy();
         DropLoot();
         Destroy(gameObject); // Example: destroy the enemy game object
     }
@@ -114,10 +125,22 @@ public class Enemy : MonoBehaviour
     
     private void DropLoot()
     {
-        float Chance = Random.Range(0.01f, 100);
-        if(Chance <= Chances)
+        // Drop coins
+        int coinsAmount = Random.Range((int)coinsMinMaxAmount.x, (int)coinsMinMaxAmount.y);
+        for (int i = 0; i < coinsAmount; i++)
         {
-            Instantiate(Loots[Random.Range(0, Loots.Length)], transform.position, transform.rotation);
+            Instantiate(Coin, transform.position, transform.rotation);
+        }
+        // Drop resources
+        if (Random.Range(0f, 100f) < resourcesLootChances)
+        {
+            int resourcesAmount = Random.Range((int)resourcesMinMaxAmount.x, (int)resourcesMinMaxAmount.y+1);
+            for (int i = 0; i < resourcesAmount; i++)
+            {
+                //Make Random rotation
+                Quaternion quaternion = Quaternion.Euler(0, 0, Random.Range(0, 360));
+                Instantiate(ResourceLoots, transform.position, quaternion);
+            }
         }
     }
 }

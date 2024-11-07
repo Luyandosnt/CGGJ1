@@ -2,13 +2,41 @@ using UnityEngine;
 
 public class Barricade : Troop
 {
+    [Header("Coin Properties")]
+    public GameObject coin;
+    public float coinProductionInterval = 5f;
+
+    private float _coinProductionInterval;
+
+    private void Start()
+    {
+        _coinProductionInterval = coinProductionInterval;
+    }
     // Override the Attack method to do nothing
     protected override void Attack()
     {
         // Barricade has no attack ability, so this is intentionally left empty
     }
 
-    public override void TakeDamage(int damage)
+    protected override void ProduceCoins()
+    {
+        // Produce coins at a fixed rate
+        if (GameManager.gameManager.isWaveActive)
+        {
+            coinProductionInterval -= Time.deltaTime;
+            if (coinProductionInterval <= 0)
+            {
+                Instantiate(coin, transform.position, Quaternion.identity);
+                coinProductionInterval = _coinProductionInterval;
+            }
+        }
+        else
+        {
+            coinProductionInterval = _coinProductionInterval;
+        }
+    }
+
+    public override void TakeDamage(float damage)
     {
         // Call the base class's TakeDamage method to reduce health
         base.TakeDamage(damage);

@@ -75,10 +75,13 @@ public class Spike : Troop
         // Spike has no active attack functionality
     }
 
+    // Override ProduceCoins to prevent Spike from producing coins
+    protected override void ProduceCoins() { }
+
     // Override DoDamage to prevent Spike from dealing damage
     protected override void DoDamage() { }
 
-    public override void TakeDamage(int damage)
+    public override void TakeDamage(float damage)
     {
         // Spikes don’t take external damage; this can be left empty or include custom logic if needed
     }

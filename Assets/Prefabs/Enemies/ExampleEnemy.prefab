@@ -279,16 +279,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a638f7565cba0148a9191987bec2876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Loots: []
   HealthBar: {fileID: 3057183148061763615}
-  moveSpeed: 1
-  attackRange: 0.75
-  attackFireRate: 1
-  damage: 1
   troopLayer:
     serializedVersion: 2
     m_Bits: 1024
-  health: 10
+  moveSpeed: 0.75
+  attackRange: 0.75
+  attackFireRate: 1
+  damage: 1
+  health: 5
+  level: 1
+  Coin: {fileID: 1755308900587855052, guid: 4e7d7df9755f8c74c80478dff2790b9c, type: 3}
+  coinsMinMaxAmount: {x: 1, y: 2}
+  ResourceLoots: {fileID: 0}
+  resourcesLootChances: 0
+  resourcesMinMaxAmount: {x: 0, y: 0}
+  maxHealth: 0
+  lifeStolen: 0
 --- !u!58 &735132734210630473
 CircleCollider2D:
   m_ObjectHideFlags: 0

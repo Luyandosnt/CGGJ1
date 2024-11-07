@@ -23,15 +23,21 @@ public class Archer : Troop
         arrowScript.SetTarget(targetPosition, damage);
     }
 
-    public void Heal(int enemyHealth)
+    public void LifeSteal(float enemyHealth)
     {
-        // Heal the archer based on the percentage of the enemy's max health, to maximum of the archer's max health
-        int healAmount = Mathf.Min((int)(enemyHealth * lifeStealPercentage), health - maxHealth);
-        health += healAmount;
-        Debug.Log($"{gameObject.name} healed for {healAmount} health! Health remaining: {health}");
+        if (enemyHealth <= 0)
+        {
+            // Heal the archer based on the percentage of the enemy's max health, to maximum of the archer's max health
+            float healAmount = Mathf.Min((enemyHealth * lifeStealPercentage), health - maxHealth);
+            health += healAmount;
+            Debug.Log($"{gameObject.name} healed for {healAmount} health! Health remaining: {health}");
+        }
     }
 
+
     protected override void DoDamage() { }
+
+    protected override void ProduceCoins() { }
 
     // Draw attack range in the editor
     private void OnDrawGizmosSelected()

@@ -170,9 +170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08bb721ef9e9f744e877d714e6821d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  troopCost: 10
-  health: 5
-  animToAttackTime: 0.33
+  troopCost: 5
+  health: 10
   enemyLayer:
     serializedVersion: 2
     m_Bits: 512
@@ -180,6 +179,22 @@ MonoBehaviour:
   attackRange: 1.5
   attackFireRate: 1
   animator: {fileID: 6187320460460332810}
+  deathObj: {fileID: 1614944461883009821, guid: 707035de2cd9b9040806a3baeef02414, type: 3}
+  fireObj: {fileID: 0}
+  fireDPS: 2
+  poisonDPS: 1
+  slowPercentage: 0.3
+  lifeStealPercentage: 0.2
+  level: 1
+  maxLevel: 5
+  healthIncrement: 2
+  damageIncrement: 1
+  fireDPSIncrement: 0.5
+  poisonDPSIncrement: 0.5
+  slowPercentageIncrement: 0.05
+  lifeStealPercentageIncrement: 0.05
+  variant: 0
+  canLifesteal: 0
 --- !u!61 &9102592507281516852
 BoxCollider2D:
   m_ObjectHideFlags: 0

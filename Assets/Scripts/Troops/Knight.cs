@@ -28,11 +28,23 @@ public class Knight : Troop
         if (canLifesteal && enemy.health <= 0 && !enemy.lifeStolen)
         {
             // Heal the knight based on the percentage of the enemy's max health, to maximum of the knight's max health
-            int healAmount = Mathf.Min((int)(enemy.maxHealth * lifeStealPercentage), health - maxHealth);
+            float healAmount = Mathf.Min((enemy.maxHealth * lifeStealPercentage), health - maxHealth);
             health += healAmount;
             Debug.Log($"{gameObject.name} healed for {healAmount} health! Health remaining: {health}");
         }
+        switch (variant)
+        {
+            case Variant.Base:
+                break;
+            case Variant.Flame:
+                Instantiate(fireObj, enemy.transform.position, Quaternion.identity);
+                break;
+            case Variant.Frost:
+                break;
+        }
     }
+
+    protected override void ProduceCoins() { }
 
     // Draw attack range in the editor
     private void OnDrawGizmosSelected()

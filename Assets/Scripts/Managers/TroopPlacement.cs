@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using static GeneralResourceController;
 
@@ -5,7 +6,10 @@ public class TroopPlacement : MonoBehaviour
 {
     public GridManager gridManager; // Reference to the GridManager
     public GameObject[] troopPrefabs; // Prefab of the troop to be placed
+    public float troopHealthPercentage = 0.5f; // Percentage of health to restore when refreshing troops
 
+    //<List> of placed troops
+    private List<Troop> placedTroops = new List<Troop>();
     private int currentTroopIndex = -1; // Index of the current troop prefab
     void Update()
     {
@@ -37,6 +41,7 @@ public class TroopPlacement : MonoBehaviour
                     // Instantiate the troop at the cell’s position
                     GameObject troop = Instantiate(troopPrefabs[currentTroopIndex], clickedCell.transform.position, Quaternion.identity, clickedCell.transform);
                     cell.troop = troop.GetComponent<Troop>(); // Assign the troop to the cell
+                    placedTroops.Add(troop.GetComponent<Troop>()); // Add the troop to the list of placed troops
                     cell.occupied = true; // Mark the cell as occupied
                     troop.transform.localPosition = Vector3.zero; // Center the troop within the cell
                     GeneralResourceController.Instance.DecreaseResource(GeneralResourceController.ResourceType.Gold, troop.GetComponent<Troop>().troopCost);
@@ -70,5 +75,13 @@ public class TroopPlacement : MonoBehaviour
     public void UpdateTroopIndex(int index)
     {
         currentTroopIndex = index;
+    }
+
+    public void TroopHealthRefresh()
+    {
+        foreach (Troop troop in placedTroops)
+        {
+            troop.Heal(troopHealthPercentage);
+        }
     }
 }

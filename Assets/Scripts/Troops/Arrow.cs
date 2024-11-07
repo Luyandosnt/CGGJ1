@@ -3,13 +3,13 @@ using UnityEngine;
 public class Arrow : MonoBehaviour
 {
     public float speed = 5f;
-    private int damage;
+    private float damage;
     private Vector3 targetPosition;
 
     public Archer owner;
     public Enemy enemy;
 
-    public void SetTarget(Vector3 target, int damageAmount)
+    public void SetTarget(Vector3 target, float damageAmount)
     {
         targetPosition = target;
         damage = damageAmount;
@@ -33,7 +33,7 @@ public class Arrow : MonoBehaviour
         {
             enemy = other.GetComponent<Enemy>();
             enemy.TakeDamage(damage, false);
-            owner.Heal(enemy.health);
+            owner.LifeSteal(enemy.health);
             Destroy(gameObject); // Destroy the arrow on impact
         }
     }

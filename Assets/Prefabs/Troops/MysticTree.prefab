@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 914330818225069282}
   - component: {fileID: 1649212646211070141}
   m_Layer: 10
-  m_Name: Barricade
+  m_Name: MysticTree
   m_TagString: Troop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -179,11 +179,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 924e0e3b74ba81f4aac992cd29a2b7ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  troopCost: 10
-  health: 20
+  troopCost: 3
+  health: 10
   enemyLayer:
     serializedVersion: 2
     m_Bits: 0
   damage: 0
   attackRange: 0
   attackFireRate: 0
+  animator: {fileID: 0}
+  deathObj: {fileID: 0}
+  fireObj: {fileID: 0}
+  fireDPS: 1
+  poisonDPS: 1
+  slowPercentage: 0.3
+  lifeStealPercentage: 0.1
+  level: 1
+  maxLevel: 5
+  healthIncrement: 2
+  damageIncrement: 1
+  fireDPSIncrement: 0.5
+  poisonDPSIncrement: 0.5
+  slowPercentageIncrement: 0.05
+  lifeStealPercentageIncrement: 0.05
+  variant: 0
+  canLifesteal: 0
+  coin: {fileID: 1755308900587855052, guid: 4e7d7df9755f8c74c80478dff2790b9c, type: 3}
+  coinProductionInterval: 10
