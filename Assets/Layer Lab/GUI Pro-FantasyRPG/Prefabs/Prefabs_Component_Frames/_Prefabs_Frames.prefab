@@ -23350,6 +23350,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4649594665891458176}
     m_Modifications:
+    - target: {fileID: 8152463633752224102, guid: 61b8de8bb72d4447d81b99d92a8d1688, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
     - target: {fileID: 8152463634377635422, guid: 61b8de8bb72d4447d81b99d92a8d1688, type: 3}
       propertyPath: m_Name
       value: BasicFrame_Diamond_80_Dark

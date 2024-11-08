@@ -11,7 +11,8 @@ public class MainMenuUI : MonoBehaviour
     {
         playButton.onClick.AddListener(() =>
         {
-            CrazySDK.Game.GameplayStop();
+            if (!Application.isEditor)
+                CrazySDK.Game.GameplayStop();
             SceneManager.LoadScene(1);
         });
 
@@ -19,7 +20,8 @@ public class MainMenuUI : MonoBehaviour
 
     private void Start()
     {
-        CrazySDK.Game.GameplayStart();
+        if (!Application.isEditor)
+            CrazySDK.Game.GameplayStart();
     }
 
 }

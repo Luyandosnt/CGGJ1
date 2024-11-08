@@ -36,7 +36,29 @@ public class Archer : Troop
 
 
     protected override void DoDamage() { }
-
+    protected override void SetElement(Variant variant)
+    {
+        if (!canLifesteal)
+        {
+            if (variant == Variant.Flame)
+                troopName = "Flame Archer";
+            else if (variant == Variant.Frost)
+                troopName = "Frost Archer";
+            else if (variant == Variant.Venom)
+                troopName = "Venom Archer";
+        }
+        else
+        {
+            if (variant == Variant.Base)
+                troopName = "Arcane Archer";
+            else if (variant == Variant.Flame)
+                troopName = "Arcane Flame Archer";
+            else if (variant == Variant.Frost)
+                troopName = "Arcane Frost Archer";
+            else if (variant == Variant.Venom)
+                troopName = "Arcane Venom Archer";
+        }
+    }
     protected override void ProduceCoins() { }
 
     // Draw attack range in the editor

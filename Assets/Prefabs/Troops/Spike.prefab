@@ -147,6 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93ad8e823f9bba34cad93fdda437e8f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  troopName: Spike
   troopCost: 10
   health: 3
   enemyLayer:
@@ -155,5 +156,27 @@ MonoBehaviour:
   damage: 5
   attackRange: 0
   attackFireRate: 0
+  animator: {fileID: 0}
+  deathObj: {fileID: 0}
+  healthBar: {fileID: 0}
+  fireObj: {fileID: 0}
+  fireDPS: 1
+  poisonDPS: 1
+  slowPercentage: 0.3
+  lifeStealPercentage: 0.1
+  level: 1
+  maxLevel: 5
+  troopUpgradeCost: 15
+  troopUpgradeCostIncrement: 15
+  attackRangeIncrement: 0.25
+  healthIncrement: 2
+  damageIncrement: 1
+  fireDPSIncrement: 0.5
+  poisonDPSIncrement: 0.5
+  slowPercentageIncrement: 0.05
+  lifeStealPercentageIncrement: 0.05
+  variant: 0
+  canLifesteal: 0
+  maxHealth: 0
   maxUses: 3
   cooldownTime: 15

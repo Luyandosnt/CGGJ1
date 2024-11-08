@@ -6,6 +6,7 @@ using CrazyGames;
 public class GameManager : MonoBehaviour
 {
     public AudioManager audioManager;
+    public UpgradeManager upgradeManager;
     public GameObject nextWaveButton;
     public TMP_Text waveText;
     public Enemy[] Enemies;
@@ -15,6 +16,8 @@ public class GameManager : MonoBehaviour
     public int amountToSpawn;
 
     public GameObject winScreen;
+    public GameObject upgradePanel;
+    public GameObject settingsPanel;
 
     private float Timer;
     private int Position = 0;
@@ -35,7 +38,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        CrazySDK.Game.GameplayStart();
+        if (!Application.isEditor)
+            CrazySDK.Game.GameplayStart();
         if (currentLevel == 1)
         {
             lastWave = 30;
@@ -49,11 +53,35 @@ public class GameManager : MonoBehaviour
             lastWave = 50;
         }
         audioManager.PlayPrepTimeMusic();
+        CloseUpgradePanel();
+    }
+
+    public void OpenUpgradePanel(Troop troop)
+    {
+        upgradePanel.SetActive(true);
+        upgradeManager.SetTroop(troop);
+    }
+
+    public void CloseUpgradePanel()
+    {
+        upgradePanel.SetActive(false);
+        upgradeManager.active = false;
+    }
+
+    public void OpenSettingsPanel()
+    {
+        settingsPanel.SetActive(true);
+        CloseUpgradePanel();
+    }
+
+    public void CloseSettingsPanel()
+    {
+        settingsPanel.SetActive(false);
     }
 
     public void NextWave()
     {
-        waveText.color = Color.gray;
+        waveText.color = Color.white;
         nextWaveButton.SetActive(false);
         HandleWaveScaling();
     }
@@ -70,7 +98,8 @@ public class GameManager : MonoBehaviour
             GeneralResourceController.Instance.ClassifyResource(GeneralResourceController.ResourceType.Gold, 10);
             if (currentWave == 10 || currentWave == 20 || currentWave == 30)
             {
-                CrazySDK.Game.HappyTime();
+                if (!Application.isEditor)
+                    CrazySDK.Game.HappyTime();
             }
         }
         if (currentWave == lastWave)
@@ -147,6 +176,10 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         HandleEnemySpawns();
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            CloseUpgradePanel();
+        }
     }
 
     void HandleEnemySpawns()

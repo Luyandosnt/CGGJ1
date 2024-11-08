@@ -31,15 +31,7 @@ public class GeneralResourceController : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject); // Destroy duplicate instance
-        }
-        else
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject); // Make persistent
-        }
+        Instance = this;
     }
 
     private void Start()

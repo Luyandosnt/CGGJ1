@@ -26,5 +26,23 @@ public class Cell : MonoBehaviour
                 }
             }
         }
+        else if (occupied)
+        {
+            if (Input.GetMouseButtonDown(1))
+            {
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hit;
+                if (Physics.Raycast(ray, out hit))
+                {
+                    GameObject clickedCell = hit.collider.gameObject;
+
+                    // Check if the hit object is indeed a cell
+                    if (clickedCell.GetComponent<Cell>() == this && occupied)
+                    {
+                        GameManager.gameManager.OpenUpgradePanel(troop);
+                    }
+                }
+            }
+        }
     }
 }

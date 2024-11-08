@@ -6,6 +6,7 @@ using UnityEditor;
 
 public abstract class Troop : MonoBehaviour
 {
+    public string troopName = "Troop"; // Name of the troop
     public int troopCost = 10;
     public float health = 5f; // Health of the troop
     public LayerMask enemyLayer; // Layer mask to detect enemies
@@ -14,6 +15,7 @@ public abstract class Troop : MonoBehaviour
     public float attackFireRate = 1f; // Attacks per second
     public Animator animator;
     public GameObject deathObj;
+    public Transform healthBar;
 
 
     [Header("Variant Settings")]
@@ -26,6 +28,8 @@ public abstract class Troop : MonoBehaviour
     [Header("Leveling Up Settings")]
     public int level = 1;
     public int maxLevel = 5;
+    public int troopUpgradeCost = 15;
+    public int troopUpgradeCostIncrement = 15;
     public float attackRangeIncrement = 0.25f;
     public int healthIncrement = 2;
     public int damageIncrement = 1;
@@ -38,7 +42,7 @@ public abstract class Troop : MonoBehaviour
     [HideInInspector] public Variant variant = Variant.Base;
     [HideInInspector] public bool canLifesteal = false;
 
-    protected float maxHealth; // Max Health of the troop
+    [HideInInspector] public float maxHealth; // Max Health of the troop
     protected float attackCooldown = 0f; // Tracks when the troop can attack again
 
 
@@ -82,6 +86,8 @@ public abstract class Troop : MonoBehaviour
         health -= damage;
         Debug.Log($"{gameObject.name} took {damage} damage! Health remaining: {health}");
 
+        healthBar.localScale = new Vector3(health / maxHealth, 1, 1);
+
         if (health <= 0)
         {
             Die();
@@ -96,7 +102,7 @@ public abstract class Troop : MonoBehaviour
         Destroy(gameObject);
     }
 
-    protected virtual void LevelUp()
+    public virtual void LevelUp()
     {
         level++;
         health += healthIncrement;
@@ -107,6 +113,7 @@ public abstract class Troop : MonoBehaviour
         fireDPS += fireDPSIncrement;
         poisonDPS += poisonDPSIncrement;
         slowPercentage += slowPercentageIncrement;
+        troopUpgradeCost += troopUpgradeCostIncrement;
         Debug.Log($"{gameObject.name} has leveled up to level {level}!");
     }
 
@@ -115,11 +122,18 @@ public abstract class Troop : MonoBehaviour
         Base,
         Flame,
         Frost,
-        Venom
+        Venom,
+        Arcane
     }
 
     public void SetVariant(Variant variant)
     {
-        this.variant = variant;
+        if (variant != Variant.Arcane)
+            this.variant = variant;
+        else
+            canLifesteal = true;
+        SetElement(variant);
     }
+
+    protected abstract void SetElement(Variant variant);
 }

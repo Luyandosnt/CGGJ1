@@ -44,6 +44,30 @@ public class Knight : Troop
         }
     }
 
+    protected override void SetElement(Variant variant)
+    {
+        if (!canLifesteal)
+        {
+            if (variant == Variant.Flame)
+                troopName = "Flame Knight";
+            else if (variant == Variant.Frost)
+                troopName = "Frost Knight";
+            else if (variant == Variant.Venom)
+                troopName = "Venom Knight";
+        }
+        else
+        {
+            if (variant == Variant.Base)
+                troopName = "Arcane Knight";
+            else if (variant == Variant.Flame)
+                troopName = "Arcane Flame Knight";
+            else if (variant == Variant.Frost)
+                troopName = "Arcane Frost Knight";
+            else if (variant == Variant.Venom)
+                troopName = "Arcane Venom Knight";
+        }
+    }
+
     protected override void ProduceCoins() { }
 
     // Draw attack range in the editor

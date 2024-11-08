@@ -6,7 +6,9 @@ public class Barricade : Troop
     public GameObject coin;
     public float coinProductionInterval = 5f;
 
-    private float _coinProductionInterval;
+    public float coinProductionIntervalIncrement = 0.5f;
+
+    [HideInInspector] public float _coinProductionInterval;
 
     private void Start()
     {
@@ -49,6 +51,14 @@ public class Barricade : Troop
         {
             Die(); // Call die function if health is zero or less
         }
+    }
+
+    protected override void SetElement(Variant variant){}
+
+    public override void LevelUp()
+    {
+        base.LevelUp();
+        _coinProductionInterval -= coinProductionIntervalIncrement;
     }
 
     protected override void DoDamage() { }

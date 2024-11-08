@@ -42,7 +42,8 @@ public class SettingsHandler : MonoBehaviour
 
     public void ReturnToMenu()
     {
-        CrazySDK.Game.GameplayStop();
+        if (!Application.isEditor)
+            CrazySDK.Game.GameplayStop();
         SceneManager.LoadScene(1);
     }
 }

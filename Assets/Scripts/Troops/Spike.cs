@@ -74,6 +74,7 @@ public class Spike : Troop
     {
         // Spike has no active attack functionality
     }
+    protected override void SetElement(Variant variant) { }
 
     // Override ProduceCoins to prevent Spike from producing coins
     protected override void ProduceCoins() { }
