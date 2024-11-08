@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4347ed5c6b990440b4521361a300d93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  troopCost: 7
+  troopCost: 15
   health: 5
   enemyLayer:
     serializedVersion: 2
@@ -186,6 +186,7 @@ MonoBehaviour:
   lifeStealPercentage: 0.1
   level: 1
   maxLevel: 5
+  attackRangeIncrement: 0.25
   healthIncrement: 2
   damageIncrement: 1
   fireDPSIncrement: 0.5

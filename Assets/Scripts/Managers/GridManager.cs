@@ -13,9 +13,12 @@ public class GridManager : MonoBehaviour
 
     public bool generateOnStart = true;
 
+    public GameObject referenceGrid;
+
     private Quaternion storedRotation;
     void Start()
     {
+        referenceGrid.SetActive(false);
         if (generateOnStart)
             GenerateGrid();
     }
