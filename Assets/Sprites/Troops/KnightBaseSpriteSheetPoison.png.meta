@@ -1,0 +1,555 @@
+fileFormatVersion: 2
+guid: c5ca3e39dc979d847ad6755e1ae8c93c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3678610986566618850
+    second: KnightBaseSpriteSheetPoison_0
+  - first:
+      213: 2595822233084495346
+    second: KnightBaseSpriteSheetPoison_1
+  - first:
+      213: -7064618774069220447
+    second: KnightBaseSpriteSheetPoison_2
+  - first:
+      213: 3178989036756875563
+    second: KnightBaseSpriteSheetPoison_3
+  - first:
+      213: 46025255951082667
+    second: KnightBaseSpriteSheetPoison_4
+  - first:
+      213: -5629056367235601016
+    second: KnightBaseSpriteSheetPoison_5
+  - first:
+      213: 5166582550698963789
+    second: KnightBaseSpriteSheetPoison_6
+  - first:
+      213: 8312120807194581946
+    second: KnightBaseSpriteSheetPoison_7
+  - first:
+      213: -5055243432415003135
+    second: KnightBaseSpriteSheetPoison_8
+  - first:
+      213: 6161154539330768902
+    second: KnightBaseSpriteSheetPoison_9
+  - first:
+      213: -1224775754138975223
+    second: KnightBaseSpriteSheetPoison_10
+  - first:
+      213: -6425589848509471144
+    second: KnightBaseSpriteSheetPoison_11
+  - first:
+      213: 8767885142302724970
+    second: KnightBaseSpriteSheetPoison_12
+  - first:
+      213: 4578784978386382889
+    second: KnightBaseSpriteSheetPoison_13
+  - first:
+      213: 5366294516318925290
+    second: KnightBaseSpriteSheetPoison_14
+  - first:
+      213: 5472729125183806658
+    second: KnightBaseSpriteSheetPoison_15
+  - first:
+      213: -6909062415562539059
+    second: KnightBaseSpriteSheetPoison_16
+  - first:
+      213: -8650584429035572889
+    second: KnightBaseSpriteSheetPoison_17
+  - first:
+      213: -8088023050284897334
+    second: KnightBaseSpriteSheetPoison_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetPoison_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e11f8de3cc2f2fcc0800000000000000
+      internalID: -3678610986566618850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetPoison_1
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f500175196360420800000000000000
+      internalID: 2595822233084495346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetPoison_2
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ab6c0aa7ae65fd90800000000000000
+      internalID: -7064618774069220447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetPoison_3
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2931c89fa90e1c20800000000000000
+      internalID: 3178989036756875563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetPoison_4
+      rect:
+        serializedVersion: 2
+        x: 2272
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba429a7f9b383a000800000000000000
+      internalID: 46025255951082667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetPoison_5
+      rect:
+        serializedVersion: 2
+        x: 2840
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88d654ade0391e1b0800000000000000
+      internalID: -5629056367235601016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetPoison_6
+      rect:
+        serializedVersion: 2
+        x: 3408
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d43b425c47363b740800000000000000
+      internalID: 5166582550698963789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetPoison_7
+      rect:
+        serializedVersion: 2
+        x: 3976
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abb57faa5d59a5370800000000000000
+      internalID: 8312120807194581946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetPoison_8
+      rect:
+        serializedVersion: 2
+        x: 4544
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10ef6cdc1ea28d9b0800000000000000
+      internalID: -5055243432415003135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetPoison_9
+      rect:
+        serializedVersion: 2
+        x: 5112
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 600981b0961d08550800000000000000
+      internalID: 6161154539330768902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetPoison_10
+      rect:
+        serializedVersion: 2
+        x: 5680
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9040905d0f8b00fe0800000000000000
+      internalID: -1224775754138975223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetPoison_11
+      rect:
+        serializedVersion: 2
+        x: 6248
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 856ac37b318b3d6a0800000000000000
+      internalID: -6425589848509471144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetPoison_12
+      rect:
+        serializedVersion: 2
+        x: 6816
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a63116a2519cda970800000000000000
+      internalID: 8767885142302724970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetPoison_13
+      rect:
+        serializedVersion: 2
+        x: 7384
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9207d9badac1b8f30800000000000000
+      internalID: 4578784978386382889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetPoison_14
+      rect:
+        serializedVersion: 2
+        x: 7952
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae1f0554e68e87a40800000000000000
+      internalID: 5366294516318925290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetPoison_15
+      rect:
+        serializedVersion: 2
+        x: 8520
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ccd382c42a03fb40800000000000000
+      internalID: 5472729125183806658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6c0c99bb9cf32a647baa96a392982e0e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      KnightBaseSpriteSheetPoison_0: -3678610986566618850
+      KnightBaseSpriteSheetPoison_1: 2595822233084495346
+      KnightBaseSpriteSheetPoison_10: -1224775754138975223
+      KnightBaseSpriteSheetPoison_11: -6425589848509471144
+      KnightBaseSpriteSheetPoison_12: 8767885142302724970
+      KnightBaseSpriteSheetPoison_13: 4578784978386382889
+      KnightBaseSpriteSheetPoison_14: 5366294516318925290
+      KnightBaseSpriteSheetPoison_15: 5472729125183806658
+      KnightBaseSpriteSheetPoison_2: -7064618774069220447
+      KnightBaseSpriteSheetPoison_3: 3178989036756875563
+      KnightBaseSpriteSheetPoison_4: 46025255951082667
+      KnightBaseSpriteSheetPoison_5: -5629056367235601016
+      KnightBaseSpriteSheetPoison_6: 5166582550698963789
+      KnightBaseSpriteSheetPoison_7: 8312120807194581946
+      KnightBaseSpriteSheetPoison_8: -5055243432415003135
+      KnightBaseSpriteSheetPoison_9: 6161154539330768902
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

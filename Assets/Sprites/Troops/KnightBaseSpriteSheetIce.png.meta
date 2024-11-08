@@ -1,0 +1,552 @@
+fileFormatVersion: 2
+guid: 10b0bb8e2e964a14eae7ef586b4940c9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4050559098568521317
+    second: KnightBaseSpriteSheetIce_0
+  - first:
+      213: 4798318713708914935
+    second: KnightBaseSpriteSheetIce_1
+  - first:
+      213: -733734146176784121
+    second: KnightBaseSpriteSheetIce_2
+  - first:
+      213: -1514978237134535904
+    second: KnightBaseSpriteSheetIce_3
+  - first:
+      213: 6343233109104132280
+    second: KnightBaseSpriteSheetIce_4
+  - first:
+      213: 5137389003576763620
+    second: KnightBaseSpriteSheetIce_5
+  - first:
+      213: -358624116223213350
+    second: KnightBaseSpriteSheetIce_6
+  - first:
+      213: -8714159390239543682
+    second: KnightBaseSpriteSheetIce_7
+  - first:
+      213: 1122318080832836438
+    second: KnightBaseSpriteSheetIce_8
+  - first:
+      213: -1518787520187487558
+    second: KnightBaseSpriteSheetIce_9
+  - first:
+      213: -5826717764815792798
+    second: KnightBaseSpriteSheetIce_10
+  - first:
+      213: -4529121888489316037
+    second: KnightBaseSpriteSheetIce_11
+  - first:
+      213: 9148058766884882582
+    second: KnightBaseSpriteSheetIce_12
+  - first:
+      213: -4338394782240175302
+    second: KnightBaseSpriteSheetIce_13
+  - first:
+      213: 3783252825217675510
+    second: KnightBaseSpriteSheetIce_14
+  - first:
+      213: 2741035115541112882
+    second: KnightBaseSpriteSheetIce_15
+  - first:
+      213: 8712810240969620052
+    second: KnightBaseSpriteSheetIce_16
+  - first:
+      213: 8022148801851298270
+    second: KnightBaseSpriteSheetIce_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetIce_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56637e31a0a763830800000000000000
+      internalID: 4050559098568521317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetIce_1
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f8aab1927d079240800000000000000
+      internalID: 4798318713708914935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetIce_2
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 709ee897ea041d5f0800000000000000
+      internalID: -733734146176784121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetIce_3
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 023062de157b9fae0800000000000000
+      internalID: -1514978237134535904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetIce_4
+      rect:
+        serializedVersion: 2
+        x: 2272
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b006a3a7e0b70850800000000000000
+      internalID: 6343233109104132280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetIce_5
+      rect:
+        serializedVersion: 2
+        x: 2840
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e4e037641cab4740800000000000000
+      internalID: 5137389003576763620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetIce_6
+      rect:
+        serializedVersion: 2
+        x: 3408
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad080a03449e50bf0800000000000000
+      internalID: -358624116223213350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetIce_7
+      rect:
+        serializedVersion: 2
+        x: 3976
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7e23a44436111780800000000000000
+      internalID: -8714159390239543682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetIce_8
+      rect:
+        serializedVersion: 2
+        x: 4544
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6531a052956439f00800000000000000
+      internalID: 1122318080832836438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetIce_9
+      rect:
+        serializedVersion: 2
+        x: 5112
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abaade91cce2ceae0800000000000000
+      internalID: -1518787520187487558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetIce_10
+      rect:
+        serializedVersion: 2
+        x: 5680
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26552bd6017532fa0800000000000000
+      internalID: -5826717764815792798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetIce_11
+      rect:
+        serializedVersion: 2
+        x: 6248
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b31e52483a35521c0800000000000000
+      internalID: -4529121888489316037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetIce_12
+      rect:
+        serializedVersion: 2
+        x: 6816
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6984290eafe64fe70800000000000000
+      internalID: 9148058766884882582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetIce_13
+      rect:
+        serializedVersion: 2
+        x: 7384
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b8a2d6eeceac3c0800000000000000
+      internalID: -4338394782240175302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetIce_14
+      rect:
+        serializedVersion: 2
+        x: 7952
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f0b7966660d08430800000000000000
+      internalID: 3783252825217675510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightBaseSpriteSheetIce_15
+      rect:
+        serializedVersion: 2
+        x: 8520
+        y: 0
+        width: 568
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23823ba3aec1a0620800000000000000
+      internalID: 2741035115541112882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3c6d3e5112d61ab4389400233432539d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      KnightBaseSpriteSheetIce_0: 4050559098568521317
+      KnightBaseSpriteSheetIce_1: 4798318713708914935
+      KnightBaseSpriteSheetIce_10: -5826717764815792798
+      KnightBaseSpriteSheetIce_11: -4529121888489316037
+      KnightBaseSpriteSheetIce_12: 9148058766884882582
+      KnightBaseSpriteSheetIce_13: -4338394782240175302
+      KnightBaseSpriteSheetIce_14: 3783252825217675510
+      KnightBaseSpriteSheetIce_15: 2741035115541112882
+      KnightBaseSpriteSheetIce_2: -733734146176784121
+      KnightBaseSpriteSheetIce_3: -1514978237134535904
+      KnightBaseSpriteSheetIce_4: 6343233109104132280
+      KnightBaseSpriteSheetIce_5: 5137389003576763620
+      KnightBaseSpriteSheetIce_6: -358624116223213350
+      KnightBaseSpriteSheetIce_7: -8714159390239543682
+      KnightBaseSpriteSheetIce_8: 1122318080832836438
+      KnightBaseSpriteSheetIce_9: -1518787520187487558
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 15caaf7fd30576e48a1714372253377e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1240252355761490940
+    second: frostArcherSpritesheet_0
+  - first:
+      213: -6641814247770684133
+    second: frostArcherSpritesheet_1
+  - first:
+      213: -8448131780568167504
+    second: frostArcherSpritesheet_2
+  - first:
+      213: -1718562643538558792
+    second: frostArcherSpritesheet_3
+  - first:
+      213: 8668508951350589830
+    second: frostArcherSpritesheet_4
+  - first:
+      213: 9055207923448802501
+    second: frostArcherSpritesheet_5
+  - first:
+      213: 8072198287222441770
+    second: frostArcherSpritesheet_6
+  - first:
+      213: 4878105276710337467
+    second: frostArcherSpritesheet_7
+  - first:
+      213: 3053283504578965375
+    second: frostArcherSpritesheet_8
+  - first:
+      213: -7350851120099142355
+    second: frostArcherSpritesheet_9
+  - first:
+      213: -1730211457502045720
+    second: frostArcherSpritesheet_10
+  - first:
+      213: -120886419421768829
+    second: frostArcherSpritesheet_11
+  - first:
+      213: 2777327457039720289
+    second: frostArcherSpritesheet_12
+  - first:
+      213: -4736700879212315285
+    second: frostArcherSpritesheet_13
+  - first:
+      213: 3052041351396250424
+    second: frostArcherSpritesheet_14
+  - first:
+      213: -6301342159331994456
+    second: frostArcherSpritesheet_15
+  - first:
+      213: 9182376700219783442
+    second: frostArcherSpritesheet_16
+  - first:
+      213: -5871303824259512457
+    second: frostArcherSpritesheet_17
+  - first:
+      213: 7608325964292473788
+    second: frostArcherSpritesheet_18
+  - first:
+      213: 8044923814928492146
+    second: frostArcherSpritesheet_19
+  - first:
+      213: 6735479383885358788
+    second: frostArcherSpritesheet_20
+  - first:
+      213: -4005311933125205203
+    second: frostArcherSpritesheet_21
+  - first:
+      213: 7087346610236157167
+    second: frostArcherSpritesheet_22
+  - first:
+      213: 8238943699513658070
+    second: frostArcherSpritesheet_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: frostArcherSpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 550
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 404bef6bd0db9cee0800000000000000
+      internalID: -1240252355761490940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostArcherSpritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 0
+        width: 550
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b150089a12983d3a0800000000000000
+      internalID: -6641814247770684133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostArcherSpritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 0
+        width: 550
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bbcb8bd7e432ca80800000000000000
+      internalID: -8448131780568167504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostArcherSpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 0
+        width: 550
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b0c0ab81607628e0800000000000000
+      internalID: -1718562643538558792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostArcherSpritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 0
+        width: 550
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 689bb89a6fabc4870800000000000000
+      internalID: 8668508951350589830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostArcherSpritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 0
+        width: 550
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cce77c31af8aad70800000000000000
+      internalID: 9055207923448802501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostArcherSpritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 0
+        width: 550
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a27096ae295360070800000000000000
+      internalID: 8072198287222441770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostArcherSpritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 3850
+        y: 0
+        width: 550
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbb374367e282b340800000000000000
+      internalID: 4878105276710337467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostArcherSpritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 0
+        width: 550
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7f2df0ab217f5a20800000000000000
+      internalID: 3053283504578965375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostArcherSpritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 4950
+        y: 0
+        width: 550
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2555bd4ad78cf990800000000000000
+      internalID: -7350851120099142355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostArcherSpritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 0
+        width: 550
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e99741b8dd0df7e0800000000000000
+      internalID: -1730211457502045720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostArcherSpritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 6050
+        y: 0
+        width: 550
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38352382176825ef0800000000000000
+      internalID: -120886419421768829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostArcherSpritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 0
+        width: 550
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f9ac57b9c0b8620800000000000000
+      internalID: 2777327457039720289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostArcherSpritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 7150
+        y: 0
+        width: 550
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6df44f75abd34eb0800000000000000
+      internalID: -4736700879212315285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostArcherSpritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 7700
+        y: 0
+        width: 550
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 833d6cd40770b5a20800000000000000
+      internalID: 3052041351396250424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostArcherSpritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 8250
+        y: 0
+        width: 550
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a4d2d821b22d88a0800000000000000
+      internalID: -6301342159331994456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostArcherSpritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 0
+        width: 550
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2197c6265fa5e6f70800000000000000
+      internalID: 9182376700219783442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostArcherSpritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 9350
+        y: 0
+        width: 550
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7778e928740f48ea0800000000000000
+      internalID: -5871303824259512457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostArcherSpritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 9900
+        y: 0
+        width: 550
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb3c8056724369960800000000000000
+      internalID: 7608325964292473788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostArcherSpritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 10450
+        y: 0
+        width: 550
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 276a4e9f59f45af60800000000000000
+      internalID: 8044923814928492146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostArcherSpritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 11000
+        y: 0
+        width: 550
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c6247440da397d50800000000000000
+      internalID: 6735479383885358788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostArcherSpritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 11550
+        y: 0
+        width: 550
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d23607394064a68c0800000000000000
+      internalID: -4005311933125205203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostArcherSpritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 12100
+        y: 0
+        width: 550
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fece13f01305b5260800000000000000
+      internalID: 7087346610236157167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostArcherSpritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 12650
+        y: 0
+        width: 550
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6da44f594ab965270800000000000000
+      internalID: 8238943699513658070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 78be73ee788c4d2438ce7bdb61f5bead
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      frostArcherSpritesheet_0: -1240252355761490940
+      frostArcherSpritesheet_1: -6641814247770684133
+      frostArcherSpritesheet_10: -1730211457502045720
+      frostArcherSpritesheet_11: -120886419421768829
+      frostArcherSpritesheet_12: 2777327457039720289
+      frostArcherSpritesheet_13: -4736700879212315285
+      frostArcherSpritesheet_14: 3052041351396250424
+      frostArcherSpritesheet_15: -6301342159331994456
+      frostArcherSpritesheet_16: 9182376700219783442
+      frostArcherSpritesheet_17: -5871303824259512457
+      frostArcherSpritesheet_18: 7608325964292473788
+      frostArcherSpritesheet_19: 8044923814928492146
+      frostArcherSpritesheet_2: -8448131780568167504
+      frostArcherSpritesheet_20: 6735479383885358788
+      frostArcherSpritesheet_21: -4005311933125205203
+      frostArcherSpritesheet_22: 7087346610236157167
+      frostArcherSpritesheet_23: 8238943699513658070
+      frostArcherSpritesheet_3: -1718562643538558792
+      frostArcherSpritesheet_4: 8668508951350589830
+      frostArcherSpritesheet_5: 9055207923448802501
+      frostArcherSpritesheet_6: 8072198287222441770
+      frostArcherSpritesheet_7: 4878105276710337467
+      frostArcherSpritesheet_8: 3053283504578965375
+      frostArcherSpritesheet_9: -7350851120099142355
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

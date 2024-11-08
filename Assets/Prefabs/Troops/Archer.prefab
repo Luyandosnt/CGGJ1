@@ -112,13 +112,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2386128712248944714}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.79, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 6.7899995, z: 0}
   m_LocalScale: {x: 3.72, y: 0.63888234, z: 3.8673267}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2061452465395590023}
-  m_Father: {fileID: 5754793192098165055}
+  m_Father: {fileID: 92287550566716926}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4731673918536929051
 SpriteRenderer:
@@ -305,6 +305,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5754793192098165055}
   - component: {fileID: 8386622963056611153}
+  - component: {fileID: 7345001556669444507}
   m_Layer: 10
   m_Name: Sprite
   m_TagString: Untagged
@@ -322,10 +323,9 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 8095877599942999136}
+  m_Children: []
   m_Father: {fileID: 92287550566716926}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8386622963056611153
@@ -372,7 +372,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -5536834213500957508, guid: abb0096f6c71d414a93c7e9c94ea90db, type: 3}
+  m_Sprite: {fileID: -2262416111849192754, guid: d64248fd5b3e586458d711a95bd4f195, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -383,6 +383,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &7345001556669444507
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5926700551338515923}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 27b1f6ab4e3d1b34f8f6933f9e414b57, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &9213507134069858454
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,6 +436,7 @@ Transform:
   m_LocalScale: {x: 0.11, y: 0.11, z: 0.11}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 8095877599942999136}
   - {fileID: 5754793192098165055}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -430,18 +453,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   troopName: Archer
-  troopCost: 15
+  troopCost: 10
   health: 5
   enemyLayer:
     serializedVersion: 2
     m_Bits: 512
   damage: 1
   attackRange: 5.5
-  attackFireRate: 1
-  animator: {fileID: 0}
+  attackFireRate: 1.0434783
+  animator: {fileID: 7345001556669444507}
   deathObj: {fileID: 0}
   healthBar: {fileID: 972820444462361088}
   fireObj: {fileID: 0}
+  arcaneParticles: {fileID: 0}
   fireDPS: 1
   poisonDPS: 1
   slowPercentage: 0.3
@@ -461,6 +485,11 @@ MonoBehaviour:
   canLifesteal: 0
   maxHealth: 0
   arrowPrefab: {fileID: 7182181340014588374, guid: 590a518ed18aa704897907b4e83f7102, type: 3}
+  allAnimators:
+  - {fileID: 9100000, guid: 717bf88830ccc9446906761167fc79d5, type: 2}
+  - {fileID: 9100000, guid: c0daebdfe823ec04a8dc78da1c454de5, type: 2}
+  - {fileID: 9100000, guid: a884cc6138c544b4ea372c1e19a2cbeb, type: 2}
+  - {fileID: 9100000, guid: 0c4815369e220154a9d6fa74fbb840b7, type: 2}
 --- !u!61 &1898485366489640484
 BoxCollider2D:
   m_ObjectHideFlags: 0

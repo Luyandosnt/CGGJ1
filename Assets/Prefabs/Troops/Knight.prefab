@@ -467,7 +467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   troopName: Knight
-  troopCost: 10
+  troopCost: 7
   health: 10
   enemyLayer:
     serializedVersion: 2
@@ -479,6 +479,7 @@ MonoBehaviour:
   deathObj: {fileID: 1614944461883009821, guid: 707035de2cd9b9040806a3baeef02414, type: 3}
   healthBar: {fileID: 9146899335339965284}
   fireObj: {fileID: 0}
+  arcaneParticles: {fileID: 0}
   fireDPS: 2
   poisonDPS: 1
   slowPercentage: 0.3
@@ -497,6 +498,11 @@ MonoBehaviour:
   variant: 0
   canLifesteal: 0
   maxHealth: 0
+  allAnimators:
+  - {fileID: 9100000, guid: c188e782dd24b7249bd0b1a08d8223e0, type: 2}
+  - {fileID: 9100000, guid: 53acd88f44ba0e443939bf299f3a6893, type: 2}
+  - {fileID: 9100000, guid: abf24510faef7db4ead0d139c31c2bdb, type: 2}
+  - {fileID: 9100000, guid: 697d6df9d8f2c044e97a7c91929080be, type: 2}
 --- !u!61 &9102592507281516852
 BoxCollider2D:
   m_ObjectHideFlags: 0

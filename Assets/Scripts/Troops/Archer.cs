@@ -3,6 +3,7 @@ using UnityEngine;
 public class Archer : Troop
 {
     public GameObject arrowPrefab; // Prefab of the arrow projectile
+    public RuntimeAnimatorController[] allAnimators;
 
     protected override void Attack()
     {
@@ -10,12 +11,16 @@ public class Archer : Troop
         if (hit.collider != null && hit.collider.CompareTag("Enemy"))
         {
             Debug.Log($"{gameObject.name} is shooting at {hit.collider.name}!");
-            SpawnArrow(hit.collider.transform.position);
+            animator.SetBool("Attack", true);
             attackCooldown = 1f / attackFireRate; // Reset cooldown
+        }
+        else
+        {
+            animator.SetBool("Attack", false);
         }
     }
 
-    private void SpawnArrow(Vector3 targetPosition)
+    public void SpawnArrow(Vector3 targetPosition)
     {
         GameObject arrow = Instantiate(arrowPrefab, transform.position, Quaternion.identity);
         Arrow arrowScript = arrow.GetComponent<Arrow>();
@@ -41,22 +46,43 @@ public class Archer : Troop
         if (!canLifesteal)
         {
             if (variant == Variant.Flame)
+            {
                 troopName = "Flame Archer";
+                animator.runtimeAnimatorController = allAnimators[1];
+            }
             else if (variant == Variant.Frost)
+            {
                 troopName = "Frost Archer";
+                animator.runtimeAnimatorController = allAnimators[2];
+            }
             else if (variant == Variant.Venom)
+            {
                 troopName = "Venom Archer";
+                animator.runtimeAnimatorController = allAnimators[3];
+            }
         }
         else
         {
             if (variant == Variant.Base)
+            {
                 troopName = "Arcane Archer";
+                animator.runtimeAnimatorController = allAnimators[0];
+            }
             else if (variant == Variant.Flame)
+            {
                 troopName = "Arcane Flame Archer";
+                animator.runtimeAnimatorController = allAnimators[1];
+            }
             else if (variant == Variant.Frost)
+            {
                 troopName = "Arcane Frost Archer";
+                animator.runtimeAnimatorController = allAnimators[2];
+            }
             else if (variant == Variant.Venom)
+            {
                 troopName = "Arcane Venom Archer";
+                animator.runtimeAnimatorController = allAnimators[3];
+            }
         }
     }
     protected override void ProduceCoins() { }

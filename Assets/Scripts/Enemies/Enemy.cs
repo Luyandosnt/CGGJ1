@@ -1,10 +1,14 @@
 using UnityEngine.UI;
 using UnityEngine;
+using TMPro;
 
 public class Enemy : MonoBehaviour
 {
     public Transform HealthBar;
     public LayerMask troopLayer; // Layer mask to detect troops
+    public TMP_Text Level;
+    public Animator animator;
+    public AudioSource spawnSFX;
 
     [Header("Enemy Stats")]
     public float moveSpeed = 2f;
@@ -43,6 +47,11 @@ public class Enemy : MonoBehaviour
     private float fireDuration;
     private float slowDuration;
 
+    private void OnEnable()
+    {
+        spawnSFX.Play();
+    }
+
     //This method must be called before this enemy attacks or is attacked
     public void SetLevel(int level)
     {
@@ -50,6 +59,8 @@ public class Enemy : MonoBehaviour
         health = health + (level - 1) * 2;
         maxHealth = health;
         damage = damage + (level - 1);
+        moveSpeed = moveSpeed + (level - 1) * 0.2f;
+        Level.text = "Lvl " + level;
     }
 
     void Update()
@@ -134,12 +145,14 @@ public class Enemy : MonoBehaviour
                 hit.collider.GetComponent<Troop>().TakeDamage(damage);
                 attackCooldown = 1f / attackFireRate; // Reset cooldown based on fire rate
             }
+            animator.SetBool("Attack", true);
         }
         else
         {
             Debug.Log($"{gameObject.name} is searching for a target...");
             targetTroop = null; // No target in range
             isAttacking = false; // Set attacking flag to false
+            animator.SetBool("Attack", false);
         }
 
         // Cooldown logic

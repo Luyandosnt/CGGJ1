@@ -9,25 +9,18 @@ public class GeneralResourceController : MonoBehaviour
     public TroopPlacement troopPlacement;
 
     public TMP_Text[] resourceTexts;
+    public TMP_Text[] runesTexts;
+
+    public GameObject resourcePanel;
 
     // Resources
-    private int essenceCrystal = 0;
     private int gold = 0;
-    private int infernoEmber = 0;
-    private int frozenShard = 0;
-    private int venomGland = 0;
+    public int[] resources;
 
     // Runes
-    private int fireRune = 0;
-    private int frostRune = 0;
-    private int magicRune = 0;
-    private int poisonRune = 0;
+    public int[] Runes;
+    public int runeIndex = -1;
 
-    // Potions
-    private int poisonPotion = 0;
-    private int frostPotion = 0;
-    private int firePotion = 0;
-    private int healthPotion = 0;
 
     private void Awake()
     {
@@ -39,18 +32,37 @@ public class GeneralResourceController : MonoBehaviour
         InitializeResources();
     }
 
+    public void ToggleResourcePanel()
+    {
+        resourcePanel.SetActive(!resourcePanel.activeSelf);
+    }
+
+    private void Update()
+    {
+        runesTexts[0].text = Runes[0].ToString();
+        runesTexts[1].text = Runes[1].ToString();
+        runesTexts[2].text = Runes[2].ToString();
+        runesTexts[3].text = Runes[3].ToString();
+    }
+
+    public void SetRuneIndex(int index)
+    {
+        runeIndex = index;
+        troopPlacement.currentTroopIndex = -1;
+    }
+
     public void InitializeResources()
     {
         gold = 20;
-        infernoEmber = 0;
-        frozenShard = 0;
-        venomGland = 0;
-        essenceCrystal = 0;
+        resources[0] = 0;
+        resources[1] = 0;
+        resources[2] = 0;
+        resources[3] = 0;
         resourceTexts[0].text = gold.ToString();
-        resourceTexts[1].text = infernoEmber.ToString();
-        resourceTexts[2].text = frozenShard.ToString();
-        resourceTexts[3].text = venomGland.ToString();
-        resourceTexts[4].text = essenceCrystal.ToString();
+        resourceTexts[1].text = resources[0].ToString();
+        resourceTexts[2].text = resources[1].ToString();
+        resourceTexts[3].text = resources[2].ToString();
+        resourceTexts[4].text = resources[3].ToString();
     }
 
     public void ResourceClicked(ResourceType type, int amount)
@@ -68,23 +80,22 @@ public class GeneralResourceController : MonoBehaviour
                 resourceTexts[0].text = gold.ToString();
                 break;
             case ResourceType.InfernoEmber:
-                infernoEmber += amount;
-                resourceTexts[1].text = infernoEmber.ToString();
+                resources[0] += amount;
+                resourceTexts[1].text = resources[0].ToString();
                 break;
             case ResourceType.FrozenShard:
-                frozenShard += amount;
-                resourceTexts[2].text = frozenShard.ToString();
+                resources[1] += amount;
+                resourceTexts[2].text = resources[1].ToString();
                 break;
             case ResourceType.VenomGland:
-                venomGland += amount;
-                resourceTexts[3].text = venomGland.ToString();
+                resources[2] += amount;
+                resourceTexts[3].text = resources[2].ToString();
                 break;
             case ResourceType.EssenceCrystal:
-                essenceCrystal += amount;
-                resourceTexts[4].text = essenceCrystal.ToString();
+                resources[3] += amount;
+                resourceTexts[4].text = resources[3].ToString();
                 break;
         }
-        ShowStorage();
     }
 
     public void DecreaseResource(ResourceType type, int amount)
@@ -96,20 +107,20 @@ public class GeneralResourceController : MonoBehaviour
                 resourceTexts[0].text = gold.ToString();
                 break;
             case ResourceType.InfernoEmber:
-                infernoEmber -= amount;
-                resourceTexts[1].text = infernoEmber.ToString();
+                resources[0] -= amount;
+                resourceTexts[1].text = resources[0].ToString();
                 break;
             case ResourceType.FrozenShard:
-                frozenShard -= amount;
-                resourceTexts[2].text = frozenShard.ToString();
+                resources[1] -= amount;
+                resourceTexts[2].text = resources[1].ToString();
                 break;
             case ResourceType.VenomGland:
-                venomGland -= amount;
-                resourceTexts[3].text = venomGland.ToString();
+                resources[2] -= amount;
+                resourceTexts[3].text = resources[2].ToString();
                 break;
             case ResourceType.EssenceCrystal:
-                essenceCrystal -= amount;
-                resourceTexts[4].text = essenceCrystal.ToString();
+                resources[3] -= amount;
+                resourceTexts[4].text = resources[3].ToString();
                 break;
         }
     }
@@ -134,22 +145,27 @@ public class GeneralResourceController : MonoBehaviour
     }
     #endregion
 
+    public void CraftRune(int index)
+    {
+        CraftRunes((RuneType)index);
+    }
+
     #region - Runes -
-    public void ClassifyRunes(RuneType type, int amount)
+    public void ClassifyRunes(RuneType type)
     {
         switch (type)
         {
             case RuneType.FireRune:
-                fireRune += amount;
+                Runes[0]++;
                 break;
             case RuneType.FrostRune:
-                frostRune += amount;
-                break;
-            case RuneType.MagicRune:
-                magicRune += amount;
+                Runes[1]++;
                 break;
             case RuneType.PoisonRune:
-                poisonRune += amount;
+                Runes[2]++;
+                break;
+            case RuneType.MagicRune:
+                Runes[3]++;
                 break;
         }
     }
@@ -159,16 +175,16 @@ public class GeneralResourceController : MonoBehaviour
         switch (type)
         {
             case RuneType.FireRune:
-                fireRune -= amount;
+                Runes[0] -= amount;
                 break;
             case RuneType.FrostRune:
-                frostRune -= amount;
+                Runes[1] -= amount;
                 break;
             case RuneType.MagicRune:
-                magicRune -= amount;
+                Runes[3] -= amount;
                 break;
             case RuneType.PoisonRune:
-                poisonRune -= amount;
+                Runes[2] -= amount;
                 break;
         }
     }
@@ -178,132 +194,37 @@ public class GeneralResourceController : MonoBehaviour
         switch (type)
         {
             case RuneType.FireRune:
-                if (infernoEmber >=1 && gold >= 3)
+                if (resources[0] >= 3)
                 {
-                    infernoEmber -= 1;
-                    gold -= 3;
-                    fireRune++;
+                    resources[0] -= 3;
+                    Runes[0]++;
                 }
                 break;
             case RuneType.FrostRune:
-                if (frozenShard >= 1 && gold >= 3)
+                if (resources[1] >= 3)
                 {
-                    frozenShard -= 1;
-                    gold -= 3;
-                    frostRune++;
+                    resources[1] -= 3;
+                    Runes[1]++;
                 }
                 break;
             case RuneType.MagicRune:
-                if (essenceCrystal >= 1 && gold >= 3)
+                if (resources[3] >= 3)
                 {
-                    essenceCrystal -= 1;
-                    gold -= 3;
-                    magicRune++;
+                    resources[3] -= 3;
+                    Runes[3]++;
                 }
                 break;
             case RuneType.PoisonRune:
-                if (venomGland >=1 && gold >= 3)
+                if (resources[2] >= 3)
                 {
-                    venomGland -= 1;
-                    gold -= 3;
-                    poisonRune++;
+                    resources[2] -= 3;
+                    Runes[2]++;
                 }
                 break;
         }
     }
 
     #endregion
-
-    #region - Potions -
-    public void ClassifyPotions(PotionType type)
-    {
-        switch (type)
-        {
-            case PotionType.PoisonPotion:
-                poisonPotion++;
-                break;
-            case PotionType.FrostPotion:
-                frostPotion++;
-                break;
-            case PotionType.FirePotion:
-                firePotion++;
-                break;
-            case PotionType.HealthPotion:
-                healthPotion++;
-                break;
-        }
-    }
-
-    public void DecreasePotions(PotionType type)
-    {
-        switch (type)
-        {
-            case PotionType.PoisonPotion:
-                poisonPotion--;
-                break;
-            case PotionType.FrostPotion:
-                frostPotion--;
-                break;
-            case PotionType.FirePotion:
-                firePotion--;
-                break;
-            case PotionType.HealthPotion:
-                healthPotion--;
-                break;
-        }
-    }
-
-    public void CraftPotions(PotionType type)
-    {
-        switch (type)
-        {
-            case PotionType.PoisonPotion:
-                if (poisonRune >=1 && gold >= 2)
-                {
-                    poisonRune -= 1;
-                    gold -= 2;
-                    poisonPotion++;
-                }
-                break;
-            case PotionType.FrostPotion:
-                if (frostRune >= 1 && gold >= 2)
-                {
-                    frostRune -= 1;
-                    gold -= 2;
-                    frostPotion++;
-                }
-                break;
-            case PotionType.FirePotion:
-                if (fireRune >= 1 && gold >= 2)
-                {
-                    fireRune -= 1;
-                    gold -= 2;
-                    firePotion++;
-                }
-                break;
-            case PotionType.HealthPotion:
-                if (magicRune >= 1 && gold >= 2)
-                {
-                    magicRune -= 1;
-                    gold -= 2;
-                    healthPotion++;
-                }
-                break;
-        }
-    }
-
-    #endregion
-
-    private void ShowStorage()
-    {
-        Debug.Log($"Resources:\n" +
-                  $"EssenceCrystal: {essenceCrystal}\n" +
-                  $"Gold: {gold}\n" +
-                  $"InfernoEmber: {infernoEmber}\n" +
-                  $"FrozenShard: {frozenShard}\n" +
-                  $"VenomGland: {venomGland}\n" +
-                  $"///////////////////////////////////");
-    }
 
     public int GetResourceAmount(ResourceType type)
     {
@@ -312,13 +233,13 @@ public class GeneralResourceController : MonoBehaviour
             case ResourceType.Gold:
                 return gold;
             case ResourceType.InfernoEmber:
-                return infernoEmber;
+                return resources[0];
             case ResourceType.FrozenShard:
-                return frozenShard;
+                return resources[1];
             case ResourceType.VenomGland:
-                return venomGland;
+                return resources[2];
             case ResourceType.EssenceCrystal:
-                return essenceCrystal;
+                return resources[3];
             default:
                 return 0;
         }

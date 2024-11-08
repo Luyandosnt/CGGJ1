@@ -16,6 +16,7 @@ public abstract class Troop : MonoBehaviour
     public Animator animator;
     public GameObject deathObj;
     public Transform healthBar;
+    public Color arcaneColor;
 
 
     [Header("Variant Settings")]
@@ -129,10 +130,32 @@ public abstract class Troop : MonoBehaviour
     public void SetVariant(Variant variant)
     {
         if (variant != Variant.Arcane)
+        {
             this.variant = variant;
+            GetComponentInChildren<SpriteRenderer>().color = arcaneColor;
+        }
         else
             canLifesteal = true;
         SetElement(variant);
+    }
+
+
+    public void SetVariant(int index)
+    {
+        Variant variant = (Variant)index;
+        if (variant != Variant.Arcane)
+        {
+            this.variant = variant;
+            GetComponentInChildren<SpriteRenderer>().color = arcaneColor;
+        }
+        else
+            canLifesteal = true;
+        SetElement(variant);
+    }
+
+    public Variant GetVariant(int index)
+    {
+        return (Variant)index;
     }
 
     protected abstract void SetElement(Variant variant);

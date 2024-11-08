@@ -3,6 +3,7 @@ using UnityEngine;
 public class Knight : Troop
 {
     Enemy enemy;
+    public RuntimeAnimatorController[] allAnimators;
     protected override void Attack()
     {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right, attackRange, enemyLayer);
@@ -49,22 +50,43 @@ public class Knight : Troop
         if (!canLifesteal)
         {
             if (variant == Variant.Flame)
+            {
                 troopName = "Flame Knight";
+                animator.runtimeAnimatorController = allAnimators[1];
+            }
             else if (variant == Variant.Frost)
+            {
                 troopName = "Frost Knight";
+                animator.runtimeAnimatorController = allAnimators[2];
+            }
             else if (variant == Variant.Venom)
+            {
                 troopName = "Venom Knight";
+                animator.runtimeAnimatorController = allAnimators[3];
+            }
         }
         else
         {
             if (variant == Variant.Base)
+            {
                 troopName = "Arcane Knight";
+                animator.runtimeAnimatorController = allAnimators[0];
+            }
             else if (variant == Variant.Flame)
+            {
                 troopName = "Arcane Flame Knight";
+                animator.runtimeAnimatorController = allAnimators[1];
+            }
             else if (variant == Variant.Frost)
+            {
                 troopName = "Arcane Frost Knight";
+                animator.runtimeAnimatorController = allAnimators[2];
+            }
             else if (variant == Variant.Venom)
+            {
                 troopName = "Arcane Venom Knight";
+                animator.runtimeAnimatorController = allAnimators[3];
+            }
         }
     }
 

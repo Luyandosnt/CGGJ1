@@ -13,10 +13,10 @@ public class TroopPlacement : MonoBehaviour
 
     //<List> of placed troops
     private List<Troop> placedTroops = new List<Troop>();
-    private int currentTroopIndex = -1; // Index of the current troop prefab
+    [HideInInspector] public int currentTroopIndex = -1; // Index of the current troop prefab
     void Update()
     {
-        if (currentTroopIndex != -1)
+        if (currentTroopIndex != -1 && GeneralResourceController.Instance.runeIndex == -1)
         {
             for (int i = 0; i < gridManager.gridArray.GetLength(0); i++)
             {
@@ -47,6 +47,24 @@ public class TroopPlacement : MonoBehaviour
                     {
                         cell.ghostObj = Instantiate(ghostTroopPrefabs[currentTroopIndex], clickedCell.transform.position, Quaternion.identity, clickedCell.transform);
                         cell.ghostOccupied = true;
+                    }
+                }
+            }
+        }
+        else if (Instance.runeIndex != -1 && currentTroopIndex == -1)
+        {
+            for (int i = 0; i < gridManager.gridArray.GetLength(0); i++)
+            {
+                for (int j = 0; j < gridManager.gridArray.GetLength(1); j++)
+                {
+                    Cell cell = gridManager.gridArray[i, j].GetComponent<Cell>();
+                    if (cell.occupied && Instance.Runes[Instance.runeIndex] >= 1 && (cell.troop.GetComponent<Archer>() || cell.troop.GetComponent<Knight>()) && cell.troop.variant != cell.troop.GetVariant(Instance.runeIndex))
+                    {
+                        cell.GetComponent<SpriteRenderer>().color = new Color(Color.blue.r, Color.blue.g, Color.blue.b, 0.1f);
+                    }
+                    else
+                    {
+                        cell.GetComponent<SpriteRenderer>().color = new Color(Color.red.r, Color.red.g, Color.red.b, 0.1f);
                     }
                 }
             }
@@ -102,7 +120,35 @@ public class TroopPlacement : MonoBehaviour
                 }
             }
         }
-        else if (Input.GetMouseButtonDown(2)) // Middle click to remove troop
+        else if (Input.GetMouseButtonDown(0) && Instance.runeIndex != -1)
+        {
+
+            // Cast a ray from the camera to the mouse position
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit))
+            {
+                GameObject clickedCell = hit.collider.gameObject;
+
+                // Check if the hit object is indeed a cell
+                if (clickedCell != null && clickedCell.GetComponent<Cell>() != null)
+                {
+                    Cell cell = clickedCell.GetComponent<Cell>();
+
+                    if (cell.occupied && Instance.Runes[Instance.runeIndex] >= 1 && (cell.troop.GetComponent<Archer>() || cell.troop.GetComponent<Knight>()) && cell.troop.variant != cell.troop.GetVariant(Instance.runeIndex))
+                    {
+                        cell.troop.SetVariant(Instance.runeIndex);
+                        Instance.Runes[Instance.runeIndex]--;
+                    }
+                    else
+                    {
+                        Instance.runeIndex = -1;
+                    }
+                }
+            }
+        }
+
+        if (Input.GetMouseButtonDown(2)) // Middle click to remove troop
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
@@ -129,6 +175,7 @@ public class TroopPlacement : MonoBehaviour
     public void UpdateTroopIndex(int index)
     {
         currentTroopIndex = index;
+        GeneralResourceController.Instance.runeIndex = -1;
     }
 
     public void TroopHealthRefresh()
