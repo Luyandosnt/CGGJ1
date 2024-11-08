@@ -30,6 +30,19 @@ public class Enemy : MonoBehaviour
     [HideInInspector] public float maxHealth;
     [HideInInspector] public bool lifeStolen = false;
 
+
+    private bool poisoned = false;
+    private bool slowed = false;
+    private bool onFire = false;
+
+    private float poisonDPS;
+    private float fireDPS;
+    private float slowPercentage;
+
+    private float poisonDuration;
+    private float fireDuration;
+    private float slowDuration;
+
     //This method must be called before this enemy attacks or is attacked
     public void SetLevel(int level)
     {
@@ -43,6 +56,60 @@ public class Enemy : MonoBehaviour
     {
         Move();
         Attack();
+        HandleEffects();
+    }
+
+    void HandleEffects()
+    {
+        //Handle Poison Effect with a timer of poisonDPS
+        if (poisoned)
+        {
+            TakeDamage(poisonDPS * Time.deltaTime, false);
+            poisonDuration -= Time.deltaTime;
+            if (poisonDuration <= 0)
+            {
+                poisoned = false;
+            }
+        }
+        if (onFire)
+        {
+            TakeDamage(fireDPS * Time.deltaTime, false);
+            fireDuration -= Time.deltaTime;
+            if (fireDuration <= 0)
+            {
+                onFire = false;
+            }
+        }
+        if (slowed)
+        {
+            moveSpeed = moveSpeed * slowPercentage;
+            slowDuration -= Time.deltaTime;
+            if (slowDuration <= 0)
+            {
+                slowed = false;
+            }
+        }
+    }
+
+    public void Poison(float poisonDPS, float poisonDuration)
+    {
+        this.poisonDPS = poisonDPS;
+        this.poisonDuration = poisonDuration;
+        poisoned = true;
+    }
+
+    public void Fire(float fireDPS, float fireDuration)
+    {
+        this.fireDPS = fireDPS;
+        this.fireDuration = fireDuration;
+        onFire = true;
+    }
+
+    public void Slow(float slowPercentage, float slowDuration)
+    {
+        this.slowPercentage = slowPercentage;
+        this.slowDuration = slowDuration;
+        slowed = true;
     }
 
     void Move()

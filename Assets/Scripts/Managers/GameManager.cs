@@ -1,6 +1,7 @@
 using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
+using CrazyGames;
 
 public class GameManager : MonoBehaviour
 {
@@ -34,19 +35,20 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        CrazySDK.Game.GameplayStart();
         if (currentLevel == 1)
         {
-            lastWave = 15;
+            lastWave = 30;
         }
         else if (currentLevel == 2)
         {
-            lastWave = 25;
+            lastWave = 40;
         }
         else if (currentLevel == 3)
         {
-            lastWave = 35;
+            lastWave = 50;
         }
-        NextWave();
+        audioManager.PlayPrepTimeMusic();
     }
 
     public void NextWave()
@@ -64,7 +66,12 @@ public class GameManager : MonoBehaviour
             isWaveActive = false;
             audioManager.PlayWaveClearMusic();
             audioManager.PlayPrepTimeMusic();
+            waveText.text = "PREPARE FOR WAVE" + (currentWave + 1);
             GeneralResourceController.Instance.ClassifyResource(GeneralResourceController.ResourceType.Gold, 10);
+            if (currentWave == 10 || currentWave == 20 || currentWave == 30)
+            {
+                CrazySDK.Game.HappyTime();
+            }
         }
         if (currentWave == lastWave)
         {
@@ -96,9 +103,8 @@ public class GameManager : MonoBehaviour
             currentWave++;
             enemiesToSpawn = amountToSpawn;
             currentEnemies = enemiesToSpawn;
-            audioManager.PlayPrepTimeMusic();
-            waveText.text = "PREPARE FOR WAVE 1";
-            Invoke("FirstWaveSetOn", 15f);
+            audioManager.PlayWaveStartMusic();
+            waveText.text = "WAVE " + currentWave;
         }
         else
         {
@@ -107,7 +113,7 @@ public class GameManager : MonoBehaviour
             currentEnemies = enemiesToSpawn;
             Frequency -= 1f;
             audioManager.PlayWaveStartMusic();
-            if (currentWave == 15)
+            if (currentWave == 10 || currentWave == 20 || currentWave == 30)
             {
                 audioManager.PlayBossMusic();
                 waveText.color = Color.red;
@@ -118,9 +124,9 @@ public class GameManager : MonoBehaviour
                 audioManager.PlayCombatMusic();
                 waveText.text = "WAVE " + currentWave;
             }
-            isWaveActive = true;
-            Debug.Log("Wave " + currentWave + " has started!");
         }
+        isWaveActive = true;
+        Debug.Log("Wave " + currentWave + " has started!");
     }
 
     void FirstWaveSetOn()
@@ -186,17 +192,29 @@ public class GameManager : MonoBehaviour
             {
                 levelToSet = Random.Range(1, 3);
             }
-            else if (currentWave <= 10)
-            {
-                levelToSet = Random.Range(1, 4);
-            }
-            else if (currentWave < 15)
+            else if (currentWave < 10)
             {
                 levelToSet = Random.Range(2, 4);
             }
+            else if (currentWave < 15)
+            {
+                levelToSet = Random.Range(3, 5);
+            }
+            else if (currentWave < 20)
+            {
+                levelToSet = Random.Range(4, 6);
+            }
+            else if (currentWave < 25)
+            {
+                levelToSet = Random.Range(5, 7);
+            }
+            else if (currentWave < 30)
+            {
+                levelToSet = Random.Range(6, 8);
+            }
             else
             {
-                levelToSet = Random.Range(2, 5);
+                levelToSet = Random.Range(7, 9);
             }
             Enemy enemy = Instantiate(Enemies[enemyIndex], InstancePosition[Position].position, Quaternion.identity, EnemiesParent);
             enemy.SetLevel(levelToSet);

@@ -10,8 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6391675347084176770}
   - component: {fileID: 8103951947697598668}
-  - component: {fileID: 6483623088247635096}
-  - component: {fileID: 1193699303917208127}
   m_Layer: 31
   m_Name: Cell_5_4
   m_TagString: Grid
@@ -89,41 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &6483623088247635096
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3590890515254004}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1193699303917208127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3590890515254004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &369740640703458114
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,8 +97,6 @@ GameObject:
   m_Component:
   - component: {fileID: 711550961434880630}
   - component: {fileID: 6838932645468182565}
-  - component: {fileID: 5270303657462667336}
-  - component: {fileID: 5321301701942248346}
   m_Layer: 31
   m_Name: Cell_5_3
   m_TagString: Grid
@@ -213,41 +174,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &5270303657462667336
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 369740640703458114}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5321301701942248346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 369740640703458114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &434238430666598788
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,8 +184,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3158973907492536305}
   - component: {fileID: 1848976099950363599}
-  - component: {fileID: 8034568100366762344}
-  - component: {fileID: 1473299982415133501}
   m_Layer: 31
   m_Name: Cell_2_0
   m_TagString: Grid
@@ -337,41 +261,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &8034568100366762344
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 434238430666598788}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1473299982415133501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 434238430666598788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &489919615540188533
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,8 +271,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8182749603269142209}
   - component: {fileID: 2172772157002759439}
-  - component: {fileID: 5958725545896387753}
-  - component: {fileID: 1321181866417093352}
   m_Layer: 31
   m_Name: Cell_5_6
   m_TagString: Grid
@@ -461,41 +348,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &5958725545896387753
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 489919615540188533}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1321181866417093352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 489919615540188533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &532701848878098062
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,8 +358,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7965598792551563626}
   - component: {fileID: 6222478091226235976}
-  - component: {fileID: 3414281289808148585}
-  - component: {fileID: 5866405312330151021}
   m_Layer: 31
   m_Name: Cell_5_10
   m_TagString: Grid
@@ -585,41 +435,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &3414281289808148585
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 532701848878098062}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5866405312330151021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 532701848878098062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &594139190493750704
 GameObject:
   m_ObjectHideFlags: 0
@@ -630,8 +445,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1788575906839386247}
   - component: {fileID: 7118176932723706104}
-  - component: {fileID: 7591609847526130339}
-  - component: {fileID: 1119837798578046986}
   m_Layer: 31
   m_Name: Cell_5_7
   m_TagString: Grid
@@ -709,41 +522,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &7591609847526130339
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 594139190493750704}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1119837798578046986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 594139190493750704}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &791350712439521620
 GameObject:
   m_ObjectHideFlags: 0
@@ -754,8 +532,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9103923578275709193}
   - component: {fileID: 5786396728670792982}
-  - component: {fileID: 459721595274866326}
-  - component: {fileID: 6219486722001442553}
   m_Layer: 31
   m_Name: Cell_0_4
   m_TagString: Grid
@@ -833,41 +609,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &459721595274866326
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 791350712439521620}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6219486722001442553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 791350712439521620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &811558714881729812
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,8 +619,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5441299103938615130}
   - component: {fileID: 4349024967200491760}
-  - component: {fileID: 3574735149820874883}
-  - component: {fileID: 4153566027069439047}
   m_Layer: 31
   m_Name: Cell_0_2
   m_TagString: Grid
@@ -957,41 +696,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &3574735149820874883
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 811558714881729812}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4153566027069439047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 811558714881729812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &1003355472062972628
 GameObject:
   m_ObjectHideFlags: 0
@@ -1002,8 +706,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8799436835528696415}
   - component: {fileID: 6718061969961661461}
-  - component: {fileID: 513872145245112159}
-  - component: {fileID: 5962485856536926101}
   m_Layer: 31
   m_Name: Cell_2_8
   m_TagString: Grid
@@ -1081,41 +783,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &513872145245112159
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1003355472062972628}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5962485856536926101
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1003355472062972628}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &1020484845442099257
 GameObject:
   m_ObjectHideFlags: 0
@@ -1126,8 +793,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3540966713872210564}
   - component: {fileID: 6977516958006271415}
-  - component: {fileID: 7051676547594744112}
-  - component: {fileID: 2467658618662278245}
   m_Layer: 31
   m_Name: Cell_5_2
   m_TagString: Grid
@@ -1205,41 +870,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &7051676547594744112
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1020484845442099257}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2467658618662278245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1020484845442099257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &1055617555209469850
 GameObject:
   m_ObjectHideFlags: 0
@@ -1250,8 +880,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7285859475956511449}
   - component: {fileID: 7431843101486860157}
-  - component: {fileID: 6595097867343353026}
-  - component: {fileID: 1665487740848675319}
   m_Layer: 31
   m_Name: Cell_0_6
   m_TagString: Grid
@@ -1329,41 +957,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &6595097867343353026
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1055617555209469850}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1665487740848675319
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1055617555209469850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &1055952855627129074
 GameObject:
   m_ObjectHideFlags: 0
@@ -1374,8 +967,6 @@ GameObject:
   m_Component:
   - component: {fileID: 648080670628120203}
   - component: {fileID: 2015377983714712932}
-  - component: {fileID: 6701111521549993510}
-  - component: {fileID: 1845522777143995674}
   m_Layer: 31
   m_Name: Cell_4_7
   m_TagString: Grid
@@ -1453,41 +1044,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &6701111521549993510
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1055952855627129074}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1845522777143995674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1055952855627129074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &1188677036808335585
 GameObject:
   m_ObjectHideFlags: 0
@@ -1498,8 +1054,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7830386301458663480}
   - component: {fileID: 5200434775854108412}
-  - component: {fileID: 1204388969776317893}
-  - component: {fileID: 2299993468859953776}
   m_Layer: 31
   m_Name: Cell_4_11
   m_TagString: Grid
@@ -1577,41 +1131,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &1204388969776317893
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1188677036808335585}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2299993468859953776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1188677036808335585}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &1324075688027864540
 GameObject:
   m_ObjectHideFlags: 0
@@ -1622,8 +1141,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2635439687485593884}
   - component: {fileID: 3244579238844897409}
-  - component: {fileID: 2587227238638781294}
-  - component: {fileID: 6136434633365116413}
   m_Layer: 31
   m_Name: Cell_2_2
   m_TagString: Grid
@@ -1701,41 +1218,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &2587227238638781294
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1324075688027864540}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6136434633365116413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1324075688027864540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &1359934110492553463
 GameObject:
   m_ObjectHideFlags: 0
@@ -1746,8 +1228,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1214622382979289615}
   - component: {fileID: 5812150830323823944}
-  - component: {fileID: 2254012947629509976}
-  - component: {fileID: 8172505071988011584}
   m_Layer: 31
   m_Name: Cell_2_7
   m_TagString: Grid
@@ -1825,41 +1305,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &2254012947629509976
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359934110492553463}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8172505071988011584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359934110492553463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &1412571028969403075
 GameObject:
   m_ObjectHideFlags: 0
@@ -1870,8 +1315,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4664434225280113339}
   - component: {fileID: 3677872459523222924}
-  - component: {fileID: 2018652284005485495}
-  - component: {fileID: 8731269507785777023}
   m_Layer: 31
   m_Name: Cell_2_10
   m_TagString: Grid
@@ -1949,41 +1392,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &2018652284005485495
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1412571028969403075}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8731269507785777023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1412571028969403075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &1502896985362047784
 GameObject:
   m_ObjectHideFlags: 0
@@ -1994,8 +1402,6 @@ GameObject:
   m_Component:
   - component: {fileID: 827110607136815920}
   - component: {fileID: 5056235608240237425}
-  - component: {fileID: 8723600265143288145}
-  - component: {fileID: 3076737301224029890}
   m_Layer: 31
   m_Name: Cell_1_7
   m_TagString: Grid
@@ -2073,41 +1479,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &8723600265143288145
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1502896985362047784}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3076737301224029890
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1502896985362047784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &1521104151891135237
 GameObject:
   m_ObjectHideFlags: 0
@@ -2118,8 +1489,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6557343199337908734}
   - component: {fileID: 3986865253846244063}
-  - component: {fileID: 8062797475202054254}
-  - component: {fileID: 6562267748661558944}
   m_Layer: 31
   m_Name: Cell_3_10
   m_TagString: Grid
@@ -2197,41 +1566,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &8062797475202054254
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1521104151891135237}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6562267748661558944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1521104151891135237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &1684603148751635906
 GameObject:
   m_ObjectHideFlags: 0
@@ -2242,8 +1576,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2990904859950221701}
   - component: {fileID: 3922425393779389575}
-  - component: {fileID: 4158857044542853728}
-  - component: {fileID: 5129685358722866378}
   m_Layer: 31
   m_Name: Cell_1_3
   m_TagString: Grid
@@ -2321,41 +1653,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &4158857044542853728
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1684603148751635906}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5129685358722866378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1684603148751635906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &2298923568299129006
 GameObject:
   m_ObjectHideFlags: 0
@@ -2366,8 +1663,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3314162196797910776}
   - component: {fileID: 5782423636848403016}
-  - component: {fileID: 6930424876382797671}
-  - component: {fileID: 7573865621218279534}
   m_Layer: 31
   m_Name: Cell_5_9
   m_TagString: Grid
@@ -2445,41 +1740,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &6930424876382797671
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2298923568299129006}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7573865621218279534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2298923568299129006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &2307869922569124528
 GameObject:
   m_ObjectHideFlags: 0
@@ -2490,8 +1750,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7972444324487491590}
   - component: {fileID: 658358899453477248}
-  - component: {fileID: 2344582635222815403}
-  - component: {fileID: 1230145845044224195}
   m_Layer: 31
   m_Name: Cell_4_6
   m_TagString: Grid
@@ -2569,41 +1827,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &2344582635222815403
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2307869922569124528}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1230145845044224195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2307869922569124528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &2474836800558298038
 GameObject:
   m_ObjectHideFlags: 0
@@ -2614,8 +1837,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6962734943334189113}
   - component: {fileID: 1408715543079012438}
-  - component: {fileID: 8816752635690879293}
-  - component: {fileID: 8015228006068007854}
   m_Layer: 31
   m_Name: Cell_0_5
   m_TagString: Grid
@@ -2693,41 +1914,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &8816752635690879293
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2474836800558298038}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8015228006068007854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2474836800558298038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &2523347776135475301
 GameObject:
   m_ObjectHideFlags: 0
@@ -2738,8 +1924,6 @@ GameObject:
   m_Component:
   - component: {fileID: 73038878743457156}
   - component: {fileID: 2347217530235302151}
-  - component: {fileID: 5063433898757332172}
-  - component: {fileID: 635231275020449262}
   m_Layer: 31
   m_Name: Cell_4_0
   m_TagString: Grid
@@ -2817,41 +2001,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &5063433898757332172
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2523347776135475301}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &635231275020449262
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2523347776135475301}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &2557799243944605566
 GameObject:
   m_ObjectHideFlags: 0
@@ -2862,8 +2011,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4477163306605543200}
   - component: {fileID: 3567215156134257985}
-  - component: {fileID: 8388897908284252257}
-  - component: {fileID: 3723387461648545202}
   m_Layer: 31
   m_Name: Cell_3_2
   m_TagString: Grid
@@ -2941,41 +2088,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &8388897908284252257
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2557799243944605566}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3723387461648545202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2557799243944605566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &2796553674982301386
 GameObject:
   m_ObjectHideFlags: 0
@@ -2986,8 +2098,6 @@ GameObject:
   m_Component:
   - component: {fileID: 141612136388209671}
   - component: {fileID: 74577901137493649}
-  - component: {fileID: 67903891176196023}
-  - component: {fileID: 8503760208857498877}
   m_Layer: 31
   m_Name: Cell_1_9
   m_TagString: Grid
@@ -3065,41 +2175,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &67903891176196023
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2796553674982301386}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8503760208857498877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2796553674982301386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &3557521166160648285
 GameObject:
   m_ObjectHideFlags: 0
@@ -3110,8 +2185,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1222777665903158646}
   - component: {fileID: 4052144363539635774}
-  - component: {fileID: 479175145194377526}
-  - component: {fileID: 2502742494843792654}
   m_Layer: 31
   m_Name: Cell_4_8
   m_TagString: Grid
@@ -3189,41 +2262,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &479175145194377526
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3557521166160648285}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2502742494843792654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3557521166160648285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &3647430530389121947
 GameObject:
   m_ObjectHideFlags: 0
@@ -3234,8 +2272,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8656169254576912246}
   - component: {fileID: 6835876720885706539}
-  - component: {fileID: 2575576146801989274}
-  - component: {fileID: 4304085378137515763}
   m_Layer: 31
   m_Name: Cell_4_4
   m_TagString: Grid
@@ -3313,41 +2349,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &2575576146801989274
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3647430530389121947}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4304085378137515763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3647430530389121947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &4025025610253943799
 GameObject:
   m_ObjectHideFlags: 0
@@ -3358,8 +2359,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6396165850086177202}
   - component: {fileID: 2591641153541812887}
-  - component: {fileID: 2546148450718437943}
-  - component: {fileID: 561430904098594826}
   m_Layer: 31
   m_Name: Cell_3_4
   m_TagString: Grid
@@ -3437,41 +2436,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &2546148450718437943
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4025025610253943799}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &561430904098594826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4025025610253943799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &4106412534221417747
 GameObject:
   m_ObjectHideFlags: 0
@@ -3482,8 +2446,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1532971708120382771}
   - component: {fileID: 6835885914727239416}
-  - component: {fileID: 6676084302349487439}
-  - component: {fileID: 389240392837418057}
   m_Layer: 31
   m_Name: Cell_1_5
   m_TagString: Grid
@@ -3561,41 +2523,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &6676084302349487439
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4106412534221417747}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &389240392837418057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4106412534221417747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &4566248979284742104
 GameObject:
   m_ObjectHideFlags: 0
@@ -3709,8 +2636,6 @@ GameObject:
   m_Component:
   - component: {fileID: 514812758271489040}
   - component: {fileID: 2088273699817656840}
-  - component: {fileID: 518981236022182573}
-  - component: {fileID: 9134234456217415765}
   m_Layer: 31
   m_Name: Cell_4_5
   m_TagString: Grid
@@ -3788,41 +2713,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &518981236022182573
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4575564164047295726}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &9134234456217415765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4575564164047295726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &4618530599367072175
 GameObject:
   m_ObjectHideFlags: 0
@@ -3833,8 +2723,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2417953885545086309}
   - component: {fileID: 9016931232077147012}
-  - component: {fileID: 6857048799891186840}
-  - component: {fileID: 5501754925022192560}
   m_Layer: 31
   m_Name: Cell_4_1
   m_TagString: Grid
@@ -3912,41 +2800,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &6857048799891186840
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4618530599367072175}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5501754925022192560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4618530599367072175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &4747277156084858817
 GameObject:
   m_ObjectHideFlags: 0
@@ -3957,8 +2810,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1044373686630958623}
   - component: {fileID: 6949588687131471983}
-  - component: {fileID: 6623418735181623011}
-  - component: {fileID: 2451356842089053224}
   m_Layer: 31
   m_Name: Cell_0_9
   m_TagString: Grid
@@ -4036,41 +2887,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &6623418735181623011
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4747277156084858817}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2451356842089053224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4747277156084858817}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &4858079817541624502
 GameObject:
   m_ObjectHideFlags: 0
@@ -4081,8 +2897,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1785782195197541180}
   - component: {fileID: 8641122034274334572}
-  - component: {fileID: 8921938712974765344}
-  - component: {fileID: 151135049675007038}
   m_Layer: 31
   m_Name: Cell_1_2
   m_TagString: Grid
@@ -4160,41 +2974,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &8921938712974765344
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4858079817541624502}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &151135049675007038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4858079817541624502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &4985379974170184306
 GameObject:
   m_ObjectHideFlags: 0
@@ -4205,8 +2984,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4016748984240390931}
   - component: {fileID: 6709701328188617989}
-  - component: {fileID: 3639551823494910849}
-  - component: {fileID: 2092450047437430914}
   m_Layer: 31
   m_Name: Cell_2_5
   m_TagString: Grid
@@ -4284,41 +3061,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &3639551823494910849
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4985379974170184306}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2092450047437430914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4985379974170184306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &5193551629006809276
 GameObject:
   m_ObjectHideFlags: 0
@@ -4329,8 +3071,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8079322816207339411}
   - component: {fileID: 4962984549929652175}
-  - component: {fileID: 4068687598260388586}
-  - component: {fileID: 1187896343964747225}
   m_Layer: 31
   m_Name: Cell_1_0
   m_TagString: Grid
@@ -4408,41 +3148,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &4068687598260388586
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5193551629006809276}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1187896343964747225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5193551629006809276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &5209294778383590957
 GameObject:
   m_ObjectHideFlags: 0
@@ -4453,8 +3158,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3289561977265220737}
   - component: {fileID: 1174319735585661241}
-  - component: {fileID: 9157082327493698779}
-  - component: {fileID: 4419175264931211079}
   m_Layer: 31
   m_Name: Cell_5_5
   m_TagString: Grid
@@ -4532,41 +3235,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &9157082327493698779
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5209294778383590957}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4419175264931211079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5209294778383590957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &5255134630653966687
 GameObject:
   m_ObjectHideFlags: 0
@@ -4577,8 +3245,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3915823468901459028}
   - component: {fileID: 1486286847100725385}
-  - component: {fileID: 5475337145977447408}
-  - component: {fileID: 9014672491660603796}
   m_Layer: 31
   m_Name: Cell_1_8
   m_TagString: Grid
@@ -4656,41 +3322,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &5475337145977447408
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5255134630653966687}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &9014672491660603796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5255134630653966687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &5333956957091699850
 GameObject:
   m_ObjectHideFlags: 0
@@ -4701,8 +3332,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6478004046888348701}
   - component: {fileID: 3351278171573231659}
-  - component: {fileID: 3087792393381575120}
-  - component: {fileID: 6059930649817113985}
   m_Layer: 31
   m_Name: Cell_3_5
   m_TagString: Grid
@@ -4780,41 +3409,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &3087792393381575120
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5333956957091699850}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6059930649817113985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5333956957091699850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &5405295573337538942
 GameObject:
   m_ObjectHideFlags: 0
@@ -4825,8 +3419,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8622228793979899398}
   - component: {fileID: 414231165109275060}
-  - component: {fileID: 9104788346884236336}
-  - component: {fileID: 6614084285782761977}
   m_Layer: 31
   m_Name: Cell_0_0
   m_TagString: Grid
@@ -4904,41 +3496,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &9104788346884236336
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5405295573337538942}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6614084285782761977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5405295573337538942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &5411323570533364574
 GameObject:
   m_ObjectHideFlags: 0
@@ -4949,8 +3506,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6361617078171772325}
   - component: {fileID: 8176487561220417903}
-  - component: {fileID: 2639126727886489466}
-  - component: {fileID: 604952030831739608}
   m_Layer: 31
   m_Name: Cell_2_9
   m_TagString: Grid
@@ -5028,41 +3583,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &2639126727886489466
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5411323570533364574}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &604952030831739608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5411323570533364574}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &5453830503124202158
 GameObject:
   m_ObjectHideFlags: 0
@@ -5073,8 +3593,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8573246997076724747}
   - component: {fileID: 4379091491479404726}
-  - component: {fileID: 3466636015039996938}
-  - component: {fileID: 2528994877792791252}
   m_Layer: 31
   m_Name: Cell_3_6
   m_TagString: Grid
@@ -5152,41 +3670,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &3466636015039996938
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5453830503124202158}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2528994877792791252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5453830503124202158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &5518419076514925214
 GameObject:
   m_ObjectHideFlags: 0
@@ -5197,8 +3680,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9054283127519295360}
   - component: {fileID: 75960371813501579}
-  - component: {fileID: 371502283070391752}
-  - component: {fileID: 4658441782300352915}
   m_Layer: 31
   m_Name: Cell_3_1
   m_TagString: Grid
@@ -5276,41 +3757,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &371502283070391752
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5518419076514925214}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4658441782300352915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5518419076514925214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &5555323416307042754
 GameObject:
   m_ObjectHideFlags: 0
@@ -5321,8 +3767,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5159245183069147080}
   - component: {fileID: 3685141348670203191}
-  - component: {fileID: 2851476063600571498}
-  - component: {fileID: 5891232694837093694}
   m_Layer: 31
   m_Name: Cell_4_9
   m_TagString: Grid
@@ -5400,41 +3844,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &2851476063600571498
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5555323416307042754}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5891232694837093694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5555323416307042754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &5788823255289268460
 GameObject:
   m_ObjectHideFlags: 0
@@ -5445,8 +3854,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4796809550017847499}
   - component: {fileID: 7238796393969677437}
-  - component: {fileID: 6928997021885271906}
-  - component: {fileID: 3853502475160075739}
   m_Layer: 31
   m_Name: Cell_1_4
   m_TagString: Grid
@@ -5524,41 +3931,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &6928997021885271906
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5788823255289268460}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3853502475160075739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5788823255289268460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &5849807050238820888
 GameObject:
   m_ObjectHideFlags: 0
@@ -5569,8 +3941,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2228590205939031475}
   - component: {fileID: 3667941627638738556}
-  - component: {fileID: 9119436723650310533}
-  - component: {fileID: 3139866630559474320}
   m_Layer: 31
   m_Name: Cell_5_8
   m_TagString: Grid
@@ -5648,41 +4018,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &9119436723650310533
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5849807050238820888}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3139866630559474320
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5849807050238820888}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &5928600166503981722
 GameObject:
   m_ObjectHideFlags: 0
@@ -5693,8 +4028,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5493299258172318680}
   - component: {fileID: 8544606944237987972}
-  - component: {fileID: 3801176126247715119}
-  - component: {fileID: 5738563792535193637}
   m_Layer: 31
   m_Name: Cell_0_8
   m_TagString: Grid
@@ -5772,41 +4105,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &3801176126247715119
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5928600166503981722}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5738563792535193637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5928600166503981722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &6050049435946455342
 GameObject:
   m_ObjectHideFlags: 0
@@ -5817,8 +4115,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4440934705530579765}
   - component: {fileID: 788315416797803936}
-  - component: {fileID: 5967492043259199497}
-  - component: {fileID: 7049778651692023482}
   m_Layer: 31
   m_Name: Cell_1_1
   m_TagString: Grid
@@ -5896,41 +4192,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &5967492043259199497
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6050049435946455342}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7049778651692023482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6050049435946455342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &6070858252636896801
 GameObject:
   m_ObjectHideFlags: 0
@@ -5941,8 +4202,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5617915798461492812}
   - component: {fileID: 1001236559851972211}
-  - component: {fileID: 6148716375561264223}
-  - component: {fileID: 8677930031026863586}
   m_Layer: 31
   m_Name: Cell_2_4
   m_TagString: Grid
@@ -6020,41 +4279,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &6148716375561264223
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6070858252636896801}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8677930031026863586
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6070858252636896801}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &6140090261554553060
 GameObject:
   m_ObjectHideFlags: 0
@@ -6065,8 +4289,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5024061594226731820}
   - component: {fileID: 5152776111627031238}
-  - component: {fileID: 2448313366901862225}
-  - component: {fileID: 4640217957594858637}
   m_Layer: 31
   m_Name: Cell_4_3
   m_TagString: Grid
@@ -6144,41 +4366,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &2448313366901862225
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6140090261554553060}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4640217957594858637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6140090261554553060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &6239030348062482070
 GameObject:
   m_ObjectHideFlags: 0
@@ -6189,8 +4376,6 @@ GameObject:
   m_Component:
   - component: {fileID: 474384277421331670}
   - component: {fileID: 6573804305805405232}
-  - component: {fileID: 7638131062504043017}
-  - component: {fileID: 1520099613342565236}
   m_Layer: 31
   m_Name: Cell_5_1
   m_TagString: Grid
@@ -6268,41 +4453,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &7638131062504043017
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6239030348062482070}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1520099613342565236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6239030348062482070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &6355318189976861399
 GameObject:
   m_ObjectHideFlags: 0
@@ -6313,8 +4463,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5324921457882810696}
   - component: {fileID: 4362743592574706154}
-  - component: {fileID: 2872022485861878529}
-  - component: {fileID: 1797387997835866521}
   m_Layer: 31
   m_Name: Cell_2_1
   m_TagString: Grid
@@ -6392,41 +4540,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &2872022485861878529
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6355318189976861399}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1797387997835866521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6355318189976861399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &6563728115058187669
 GameObject:
   m_ObjectHideFlags: 0
@@ -6437,8 +4550,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3722695042724548297}
   - component: {fileID: 1125785751170718078}
-  - component: {fileID: 8157726570874330097}
-  - component: {fileID: 5519006155759281118}
   m_Layer: 31
   m_Name: Cell_0_7
   m_TagString: Grid
@@ -6516,41 +4627,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &8157726570874330097
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6563728115058187669}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5519006155759281118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6563728115058187669}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &6611933874850161696
 GameObject:
   m_ObjectHideFlags: 0
@@ -6561,8 +4637,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8834963262848887767}
   - component: {fileID: 7802078869595395369}
-  - component: {fileID: 1230866109034090130}
-  - component: {fileID: 3710626566066694568}
   m_Layer: 31
   m_Name: Cell_0_3
   m_TagString: Grid
@@ -6640,41 +4714,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &1230866109034090130
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6611933874850161696}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3710626566066694568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6611933874850161696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &6612550361252448232
 GameObject:
   m_ObjectHideFlags: 0
@@ -6685,8 +4724,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6457064369181784054}
   - component: {fileID: 5199711643137008346}
-  - component: {fileID: 1643554701064705954}
-  - component: {fileID: 7924792423975225839}
   m_Layer: 31
   m_Name: Cell_0_1
   m_TagString: Grid
@@ -6764,41 +4801,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &1643554701064705954
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6612550361252448232}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7924792423975225839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6612550361252448232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &6771471267863112087
 GameObject:
   m_ObjectHideFlags: 0
@@ -6809,8 +4811,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4791818935848124468}
   - component: {fileID: 1013875744760324314}
-  - component: {fileID: 89995175525149777}
-  - component: {fileID: 4193991071120486148}
   m_Layer: 31
   m_Name: Cell_0_10
   m_TagString: Grid
@@ -6888,41 +4888,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &89995175525149777
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6771471267863112087}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4193991071120486148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6771471267863112087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &6791297614037501839
 GameObject:
   m_ObjectHideFlags: 0
@@ -6933,8 +4898,6 @@ GameObject:
   m_Component:
   - component: {fileID: 800535508906519395}
   - component: {fileID: 7827781197538458146}
-  - component: {fileID: 8152388121186441785}
-  - component: {fileID: 8088790521455038431}
   m_Layer: 31
   m_Name: Cell_1_6
   m_TagString: Grid
@@ -7012,41 +4975,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &8152388121186441785
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6791297614037501839}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8088790521455038431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6791297614037501839}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &6796996949520048066
 GameObject:
   m_ObjectHideFlags: 0
@@ -7057,8 +4985,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5631833254188875802}
   - component: {fileID: 5115946315868948803}
-  - component: {fileID: 1379900743837913028}
-  - component: {fileID: 6950036758079876231}
   m_Layer: 31
   m_Name: Cell_3_7
   m_TagString: Grid
@@ -7136,41 +5062,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &1379900743837913028
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6796996949520048066}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6950036758079876231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6796996949520048066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &7026872335323960720
 GameObject:
   m_ObjectHideFlags: 0
@@ -7181,8 +5072,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6343841614584580038}
   - component: {fileID: 2222674084125785491}
-  - component: {fileID: 3856515964748967959}
-  - component: {fileID: 1102324296254893636}
   m_Layer: 31
   m_Name: Cell_1_10
   m_TagString: Grid
@@ -7260,41 +5149,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &3856515964748967959
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7026872335323960720}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1102324296254893636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7026872335323960720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &7441660661737481073
 GameObject:
   m_ObjectHideFlags: 0
@@ -7305,8 +5159,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9209841836857576929}
   - component: {fileID: 309403548604830960}
-  - component: {fileID: 6839732319646957623}
-  - component: {fileID: 4215756411719549482}
   m_Layer: 31
   m_Name: Cell_5_0
   m_TagString: Grid
@@ -7384,41 +5236,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &6839732319646957623
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7441660661737481073}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4215756411719549482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7441660661737481073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &7551160021393752725
 GameObject:
   m_ObjectHideFlags: 0
@@ -7429,8 +5246,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4133067563081274879}
   - component: {fileID: 5385599195485357255}
-  - component: {fileID: 4642851132374111390}
-  - component: {fileID: 3161124728820974961}
   m_Layer: 31
   m_Name: Cell_2_11
   m_TagString: Grid
@@ -7508,41 +5323,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &4642851132374111390
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7551160021393752725}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3161124728820974961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7551160021393752725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &7683147376764174088
 GameObject:
   m_ObjectHideFlags: 0
@@ -7553,8 +5333,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6302616129735591235}
   - component: {fileID: 6552069138801867904}
-  - component: {fileID: 3896032092497007767}
-  - component: {fileID: 9049228172781097882}
   m_Layer: 31
   m_Name: Cell_3_3
   m_TagString: Grid
@@ -7632,41 +5410,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &3896032092497007767
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7683147376764174088}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &9049228172781097882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7683147376764174088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &7859906603425978130
 GameObject:
   m_ObjectHideFlags: 0
@@ -7677,8 +5420,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1495796820003138017}
   - component: {fileID: 1362473238230561849}
-  - component: {fileID: 137587956358890361}
-  - component: {fileID: 2399300116993780242}
   m_Layer: 31
   m_Name: Cell_5_11
   m_TagString: Grid
@@ -7756,41 +5497,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &137587956358890361
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7859906603425978130}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2399300116993780242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7859906603425978130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &7879533144306884155
 GameObject:
   m_ObjectHideFlags: 0
@@ -7801,8 +5507,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3791773694920158285}
   - component: {fileID: 6509661020330237570}
-  - component: {fileID: 1737832787432673916}
-  - component: {fileID: 1799510934432559546}
   m_Layer: 31
   m_Name: Cell_0_11
   m_TagString: Grid
@@ -7880,41 +5584,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &1737832787432673916
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7879533144306884155}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1799510934432559546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7879533144306884155}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &7919303354139351462
 GameObject:
   m_ObjectHideFlags: 0
@@ -7925,8 +5594,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5182838438568074871}
   - component: {fileID: 5658286847696482743}
-  - component: {fileID: 1501254505119012687}
-  - component: {fileID: 5424424398993217174}
   m_Layer: 31
   m_Name: Cell_3_8
   m_TagString: Grid
@@ -8004,41 +5671,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &1501254505119012687
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7919303354139351462}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5424424398993217174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7919303354139351462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &8301050262233280704
 GameObject:
   m_ObjectHideFlags: 0
@@ -8049,8 +5681,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2152590183696050470}
   - component: {fileID: 1684791848593580702}
-  - component: {fileID: 7354385194591484067}
-  - component: {fileID: 1320723766724315010}
   m_Layer: 31
   m_Name: Cell_2_3
   m_TagString: Grid
@@ -8128,41 +5758,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &7354385194591484067
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8301050262233280704}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1320723766724315010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8301050262233280704}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &8366122395363051187
 GameObject:
   m_ObjectHideFlags: 0
@@ -8173,8 +5768,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7851914362121164151}
   - component: {fileID: 9099510088065830611}
-  - component: {fileID: 7875934264201833999}
-  - component: {fileID: 6716080903539051356}
   m_Layer: 31
   m_Name: Cell_4_10
   m_TagString: Grid
@@ -8252,41 +5845,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &7875934264201833999
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8366122395363051187}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6716080903539051356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8366122395363051187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &8417447656356885006
 GameObject:
   m_ObjectHideFlags: 0
@@ -8297,8 +5855,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3371772116812564339}
   - component: {fileID: 4921309788836582248}
-  - component: {fileID: 4068287928632535986}
-  - component: {fileID: 6541434695552506513}
   m_Layer: 31
   m_Name: Cell_1_11
   m_TagString: Grid
@@ -8376,41 +5932,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &4068287928632535986
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8417447656356885006}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6541434695552506513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8417447656356885006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &8550249562711705310
 GameObject:
   m_ObjectHideFlags: 0
@@ -8421,8 +5942,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4847891394372518207}
   - component: {fileID: 364990080614988481}
-  - component: {fileID: 2268000674367279857}
-  - component: {fileID: 5960040038809663155}
   m_Layer: 31
   m_Name: Cell_3_11
   m_TagString: Grid
@@ -8500,41 +6019,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &2268000674367279857
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8550249562711705310}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5960040038809663155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8550249562711705310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &8911392630563156621
 GameObject:
   m_ObjectHideFlags: 0
@@ -8545,8 +6029,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6060158819127471527}
   - component: {fileID: 2775665857338421091}
-  - component: {fileID: 2727652769503995572}
-  - component: {fileID: 8305994825421379189}
   m_Layer: 31
   m_Name: Cell_2_6
   m_TagString: Grid
@@ -8624,41 +6106,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &2727652769503995572
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8911392630563156621}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8305994825421379189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8911392630563156621}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &8946001173550177487
 GameObject:
   m_ObjectHideFlags: 0
@@ -8669,8 +6116,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3310945448884171545}
   - component: {fileID: 4585969075478075468}
-  - component: {fileID: 2683913027383780392}
-  - component: {fileID: 3993139439023557616}
   m_Layer: 31
   m_Name: Cell_3_9
   m_TagString: Grid
@@ -8748,41 +6193,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &2683913027383780392
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8946001173550177487}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3993139439023557616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8946001173550177487}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &9009242227268765070
 GameObject:
   m_ObjectHideFlags: 0
@@ -8793,8 +6203,6 @@ GameObject:
   m_Component:
   - component: {fileID: 454093405147810129}
   - component: {fileID: 864151287555051584}
-  - component: {fileID: 1357576961081848391}
-  - component: {fileID: 6027158152282170883}
   m_Layer: 31
   m_Name: Cell_4_2
   m_TagString: Grid
@@ -8872,41 +6280,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &1357576961081848391
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9009242227268765070}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6027158152282170883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9009242227268765070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
 --- !u!1 &9046841333018358857
 GameObject:
   m_ObjectHideFlags: 0
@@ -8917,8 +6290,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5075893636757933996}
   - component: {fileID: 845169553333537593}
-  - component: {fileID: 6217194584100781763}
-  - component: {fileID: 7062426091519470182}
   m_Layer: 31
   m_Name: Cell_3_0
   m_TagString: Grid
@@ -8996,38 +6367,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &6217194584100781763
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9046841333018358857}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7062426091519470182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9046841333018358857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faed55cbb3a2d947ab78eca14e03487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 0}
-  occupied: 0
